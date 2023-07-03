@@ -2104,7 +2104,7 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
             }
             case F_TRAINER_PARTY_ITEMS_MOVES_ABILITIES:
             {
-                const struct TrainerMonItemCustomMovesAbillities *partyData = trainer->party.ItemsMovesAbilities;
+                const struct TrainerMonItemCustomMovesAbilities *partyData = trainer->party.ItemsMovesAbilities;
                 fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
                 CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
 

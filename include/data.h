@@ -108,7 +108,7 @@ union TrainerMonPtr
     const struct TrainerMonItemDefaultMoves *ItemDefaultMoves;
     const struct TrainerMonItemCustomMoves *ItemCustomMoves;
     const struct TrainerMonCustomized *EverythingCustomized;
-    const struct TrainerMonItemCustomMovesAbillities *ItemsMovesAbilities;
+    const struct TrainerMonItemCustomMovesAbilities *ItemsMovesAbilities;
 };
 
 struct Trainer
