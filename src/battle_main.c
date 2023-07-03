@@ -1911,6 +1911,11 @@ static u32 GeneratePartyHash(const struct Trainer *trainer, u32 i)
         buffer = (const u8 *) &trainer->party.EverythingCustomized[i];
         n = sizeof(*trainer->party.EverythingCustomized);
     }
+    else if (trainer->partyFlags == F_TRAINER_PARTY_ITEMS_MOVES_ABILITIES)
+    {
+        buffer = (const u8 *) &trainer->party.ItemsMovesAbilities[i];
+        n = sizeof(*trainer->party.ItemsMovesAbilities);
+    }
     return Crc32B(buffer, n);
 }
 
@@ -2095,6 +2100,34 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                     SetMonData(&party[i], MON_DATA_NICKNAME, partyData[i].nickname);
                 }
                 CalculateMonStats(&party[i]);
+                break;
+            }
+            case F_TRAINER_PARTY_ITEMS_MOVES_ABILITIES:
+            {
+                const struct TrainerMonItemCustomMovesAbillities *partyData = trainer->party.ItemsMovesAbilities;
+                fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
+                CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+
+                SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
+
+                for (j = 0; j < MAX_MON_MOVES; j++)
+                {
+                    SetMonData(&party[i], MON_DATA_MOVE1 + j, &partyData[i].moves[j]);
+                    SetMonData(&party[i], MON_DATA_PP1 + j, &gBattleMoves[partyData[i].moves[j]].pp);
+                }
+                if (partyData[i].ability != ABILITY_NONE)
+                {
+                    const struct SpeciesInfo *speciesInfo = &gSpeciesInfo[partyData[i].species];
+                    u32 maxAbilities = ARRAY_COUNT(speciesInfo->abilities);
+                    for (j = 0; j < maxAbilities; ++j)
+                    {
+                        if (speciesInfo->abilities[j] == partyData[i].ability)
+                            break;
+                    }
+                    if (j < maxAbilities)
+                        SetMonData(&party[i], MON_DATA_ABILITY_NUM, &j);
+                }
+                break;
             }
             }
 

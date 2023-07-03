@@ -6869,11 +6869,22 @@ static const struct TrainerMonNoItemDefaultMoves sParty_BrendanRoute119Treecko[]
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_BrendanRoute103Torchic[] = {
+static const struct TrainerMonItemCustomMovesAbillities sParty_BrendanRoute103Torchic[] = {
+    {
+    .iv = 0,
+    .lvl = 2,
+    .species = SPECIES_SNUBBULL,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_TACKLE, MOVE_NONE, MOVE_NONE, MOVE_NONE},
+    .ability = 0,
+    },
     {
     .iv = 0,
     .lvl = 5,
     .species = SPECIES_MUDKIP,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_TACKLE, MOVE_GROWL, MOVE_NONE, MOVE_NONE},
+    .ability = 0,
     }
 };
 
