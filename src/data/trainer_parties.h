@@ -10481,7 +10481,7 @@ static const struct TrainerMonItemCustomMovesAbilities sParty_Roxanne5[] = {
     {
     .iv = 255,
     .lvl = 56,
-    species = SPECIES_PROBOPASS,
+    .species = SPECIES_PROBOPASS,
     .heldItem = ITEM_AIR_BALLOON,
     .moves = {MOVE_EARTH_POWER, MOVE_DISCHARGE, MOVE_PROTECT, MOVE_FLASH_CANNON},
     .ability = 2
