@@ -808,7 +808,7 @@ static u8 GetSumOfEnemyPartyLevel(u16 opponentId, u8 numMons)
         break;
     case F_TRAINER_PARTY_ITEMS_MOVES_ABILITIES:
         {
-            const struct TrainerMonItemCustomMovesAbillities *party;
+            const struct TrainerMonItemCustomMovesAbilities *party;
             party = gTrainers[opponentId].party.ItemsMovesAbilities;
             for (i = 0; i < count; i++)
                 sum += party[i].lvl;
