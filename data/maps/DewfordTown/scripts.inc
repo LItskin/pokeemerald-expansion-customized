@@ -716,12 +716,10 @@ DewfordTown_Text_ThrowInFishingAdvice:
 	.string "in a little fishing advice!\p"
 	.string "First, you want to face the water,\n"
 	.string "then use the ROD.\p"
-	.string "Focus your mind…\n"
-	.string "If you get a bite, pull on the ROD.\p"
-	.string "Sometimes you can snag something\n"
-	.string "immediately, but with bigger catches,\l"
-	.string "you need to time the pulls on your ROD\l"
-	.string "to haul them in.$"
+	.string "That's it!\n"
+	.string "These fancy RODs will do the rest.\p"
+	.string "It really can's be simpler than that.\n"
+	.string "Isn't technology great?$"
 
 DewfordTown_Text_ThatsTooBadThen:
 	.string "Oh, is that so?\n"
