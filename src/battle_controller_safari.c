@@ -232,6 +232,22 @@ static void HandleInputChooseAction(void)
             ActionSelectionCreateCursorAt(gActionSelectionCursor[gActiveBattler], 0);
         }
     }
+    else if (JOY_NEW(B_BUTTON))
+    {
+        if (gActionSelectionCursor[gActiveBattler] == 3)// if alread at run postion, then run
+        {
+            PlaySE(SE_SELECT);
+            BtlController_EmitTwoReturnValues(BUFFER_B, B_ACTION_SAFARI_RUN, 0);
+            PlayerBufferExecCompleted();
+        }
+        else// move cursor to run position
+        {
+            PlaySE(SE_SELECT);
+            ActionSelectionDestroyCursorAt(gActionSelectionCursor[gActiveBattler]);
+            gActionSelectionCursor[gActiveBattler] = 3;
+            ActionSelectionCreateCursorAt(gActionSelectionCursor[gActiveBattler], 0);
+        }
+    }
 }
 
 static void CompleteOnBattlerSpriteCallbackDummy(void)

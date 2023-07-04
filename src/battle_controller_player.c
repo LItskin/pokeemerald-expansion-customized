@@ -321,6 +321,25 @@ static void HandleInputChooseAction(void)
             BtlController_EmitTwoReturnValues(BUFFER_B, B_ACTION_CANCEL_PARTNER, 0);
             PlayerBufferExecCompleted();
         }
+        else
+        {
+            if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))// wild encounter check
+            {
+                if (gActionSelectionCursor[gActiveBattler] == 3)// if alread at run postion, then run
+                {
+                    PlaySE(SE_SELECT);
+                    BtlController_EmitTwoReturnValues(BUFFER_B, B_ACTION_RUN, 0);
+                    PlayerBufferExecCompleted();
+                }
+                else// move cursor to run position
+                {
+                    PlaySE(SE_SELECT);
+                    ActionSelectionDestroyCursorAt(gActionSelectionCursor[gActiveBattler]);
+                    gActionSelectionCursor[gActiveBattler] = 3;
+                    ActionSelectionCreateCursorAt(gActionSelectionCursor[gActiveBattler], 0);
+                }
+            }
+        }
     }
     else if (JOY_NEW(START_BUTTON))
     {
