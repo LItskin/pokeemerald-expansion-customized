@@ -3912,3 +3912,18 @@ static const u8 sBerserkGene[] = _(
     "Sharply boosts\n"
     "Attack, but causes\n"
     "lasting confusion.");
+
+static const u8 sAlolanSoulDesc[] = _(
+    "Essence of a\n"
+    "tropical place.\n"
+    "Should be held.");
+
+static const u8 sGalarianSoulDesc[] = _(
+    "Essence of a\n"
+    "energetic place.\n"
+    "Should be held.");
+
+static const u8 sHisuianSoulDesc[] = _(
+    "Essence of a\n"
+    "historic place.\n"
+    "Should be held.");

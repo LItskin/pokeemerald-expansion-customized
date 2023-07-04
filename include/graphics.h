@@ -8881,6 +8881,14 @@ extern const u32 gItemIconPalette_LustrousGlobe[];
 extern const u32 gItemIcon_BerserkGene[];
 extern const u32 gItemIconPalette_BerserkGene[];
 
+//custom items
+extern const u32 gItemIcon_Alolan_Soul[];
+extern const u32 gItemIconPalette_Alolan_Soul[];
+extern const u32 gItemIcon_Galarian_Soul[];
+extern const u32 gItemIconPalette_Galarian_Soul[];
+extern const u32 gItemIcon_Hisuian_Soul[];
+extern const u32 gItemIconPalette_Hisuian_Soul[];
+
 extern const u32 gItemIcon_ReturnToFieldArrow[];
 extern const u32 gItemIconPalette_ReturnToFieldArrow[];
 

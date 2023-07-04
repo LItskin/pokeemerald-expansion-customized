@@ -10350,4 +10350,40 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
     },
+
+    [ITEM_ALOLAN_SOUL] =
+    {
+        .name = _("Alolan Soul"),
+        .itemId = ITEM_ALOLAN_SOUL,
+        .price = 1000,
+        .description = sAlolanSoulDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .flingPower = 30,
+    },
+
+    [ITEM_GALARIAN_SOUL] =
+    {
+        .name = _("Galarian Soul"),
+        .itemId = ITEM_ALOLAN_SOUL,
+        .price = 1000,
+        .description = sGalarianSoulDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .flingPower = 30,
+    },
+
+    [ITEM_HISUIAN_SOUL] =
+    {
+        .name = _("Hisuian Soul"),
+        .itemId = ITEM_ALOLAN_SOUL,
+        .price = 1000,
+        .description = sHisuianSoulDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .flingPower = 30,
+    },
 };

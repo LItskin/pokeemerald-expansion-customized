@@ -316,6 +316,11 @@
 #define EVO_ITEM_NIGHT                    39     // specified item is used on Pokémon, is night
 #define EVO_ITEM_DAY                      40     // specified item is used on Pokémon, is day
 #define EVO_ITEM_HOLD                     41     // Pokémon levels up, holds specified item
+#define EVO_ALOLAN_SOUL_LEVEL             42     // Pokémon reaches specified level while holding an Alolan Soul
+#define EVO_GALARIAN_SOUL_LEVEL           43     // Pokémon reaches specified level while holding an Galarian Soul
+#define EVO_HISUIAN_SOUL_LEVEL            44     // Pokémon reaches specified level while holding an Hisuian Soul
+#define EVO_ALOLAN_SOUL_ITEM              45     // specified item is used on Pokémon while holding an Alolan Soul
+#define EVO_GALARIAN_SOUL_MOVE            46     // Pokémon levels up, knows specified move, and holds a Galarian Soul
 
 #define EVOS_PER_MON 10
 

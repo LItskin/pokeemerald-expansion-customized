@@ -6609,6 +6609,38 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 }
                 break;
+            case EVO_ALOLAN_SOUL_LEVEL:
+                if (gEvolutionTable[species][i].param <= level && heldItem == ITEM_ALOLAN_SOUL)
+                {
+                    heldItem = 0;
+                    SetMonData(mon, MON_DATA_HELD_ITEM, &heldItem);
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                }
+                break;
+            case EVO_GALARIAN_SOUL_LEVEL:
+                if (gEvolutionTable[species][i].param <= level && heldItem == ITEM_GALARIAN_SOUL)
+                {
+                    heldItem = 0;
+                    SetMonData(mon, MON_DATA_HELD_ITEM, &heldItem);
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                }
+                break;
+            case EVO_HISUIAN_SOUL_LEVEL:
+                if (gEvolutionTable[species][i].param <= level && heldItem == ITEM_HISUIAN_SOUL)
+                {
+                    heldItem = 0;
+                    SetMonData(mon, MON_DATA_HELD_ITEM, &heldItem);
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                }
+                break;
+            case EVO_GALARIAN_SOUL_MOVE:
+                if (MonKnowsMove(mon, gEvolutionTable[species][i].param) && heldItem == ITEM_GALARIAN_SOUL)
+                {
+                    heldItem = 0;
+                    SetMonData(mon, MON_DATA_HELD_ITEM, &heldItem);
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                }
+                break;
             }
         }
         break;
@@ -6662,6 +6694,22 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
                 RtcCalcLocalTime();
                 if (gLocalTime.hours >= 12 && gLocalTime.hours < 24 && gEvolutionTable[species][i].param == evolutionItem)
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+            case EVO_ALOLAN_SOUL_ITEM:
+                if (gEvolutionTable[species][i].param == evolutionItem && heldItem == ITEM_ALOLAN_SOUL)
+                {
+                    heldItem = 0;
+                    SetMonData(mon, MON_DATA_HELD_ITEM, &heldItem);
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                }
+                break;
+            case EVO_HISUIAN_SOUL_ITEM:
+                if (gEvolutionTable[species][i].param == evolutionItem && heldItem == ITEM_HISUIAN_SOUL)
+                {
+                    heldItem = 0;
+                    SetMonData(mon, MON_DATA_HELD_ITEM, &heldItem);
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                }
                 break;
             }
         }

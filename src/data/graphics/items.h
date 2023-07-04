@@ -2001,3 +2001,12 @@ const u32 gItemIconPalette_LustrousGlobe[] = INCBIN_U32("graphics/items/icon_pal
 
 const u32 gItemIcon_BerserkGene[] = INCBIN_U32("graphics/items/icons/berserk_gene.4bpp.lz");
 const u32 gItemIconPalette_BerserkGene[] = INCBIN_U32("graphics/items/icon_palettes/berserk_gene.gbapal.lz");
+
+const u32 gItemIcon_Alolan_Soul[] = INCBIN_U32("graphics/items/icons/alolan_soul.4bpp.lz");
+const u32 gItemIconPalette_Alolan_Soul[] = INCBIN_U32("graphics/items/icon_palettes/alolan_soul.gbapal.lz");
+
+const u32 gItemIcon_Galarian_Soul[] = INCBIN_U32("graphics/items/icons/galarian_soul.4bpp.lz");
+const u32 gItemIconPalette_Galarian_Soul[] = INCBIN_U32("graphics/items/icon_palettes/galarian_soul.gbapal.lz");
+
+const u32 gItemIcon_Hisuian_Soul[] = INCBIN_U32("graphics/items/icons/hisuian_soul.4bpp.lz");
+const u32 gItemIconPalette_Hisuian_Soul[] = INCBIN_U32("graphics/items/icon_palettes/hisuian_soul.gbapal.lz");
