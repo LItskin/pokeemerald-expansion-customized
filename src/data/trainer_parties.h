@@ -10583,7 +10583,7 @@ static const struct TrainerMonItemCustomMovesAbilities sParty_Brawly2[] = {
     .lvl = 35,
     .species = SPECIES_HITMONTOP,
     .heldItem = ITEM_WIDE_LENS,
-    .moves = {MOVE_HIGH_JUMP_KICK, MOVE_COUNTER, MOVE_PROTECT, MOVE_MOVE_TRIPLE_AXEL},
+    .moves = {MOVE_HIGH_JUMP_KICK, MOVE_COUNTER, MOVE_PROTECT, MOVE_TRIPLE_AXEL},
     .ability = 1,
     },
     {
@@ -10618,7 +10618,7 @@ static const struct TrainerMonItemCustomMovesAbilities sParty_Brawly3[] = {
     .lvl = 40,
     .species = SPECIES_HITMONTOP,
     .heldItem = ITEM_WIDE_LENS,
-    .moves = {MOVE_HIGH_JUMP_KICK, MOVE_COUNTER, MOVE_PROTECT, MOVE_MOVE_TRIPLE_AXEL},
+    .moves = {MOVE_HIGH_JUMP_KICK, MOVE_COUNTER, MOVE_PROTECT, MOVE_TRIPLE_AXEL},
     .ability = 1,
     },
     {
@@ -10661,7 +10661,7 @@ static const struct TrainerMonItemCustomMovesAbilities sParty_Brawly4[] = {
     .lvl = 45,
     .species = SPECIES_HITMONTOP,
     .heldItem = ITEM_WIDE_LENS,
-    .moves = {MOVE_HIGH_JUMP_KICK, MOVE_COUNTER, MOVE_PROTECT, MOVE_MOVE_TRIPLE_AXEL},
+    .moves = {MOVE_HIGH_JUMP_KICK, MOVE_COUNTER, MOVE_PROTECT, MOVE_TRIPLE_AXEL},
     .ability = 1,
     },
     {
@@ -10712,7 +10712,7 @@ static const struct TrainerMonItemCustomMovesAbilities sParty_Brawly5[] = {
     .lvl = 55,
     .species = SPECIES_HITMONTOP,
     .heldItem = ITEM_WIDE_LENS,
-    .moves = {MOVE_HIGH_JUMP_KICK, MOVE_COUNTER, MOVE_PROTECT, MOVE_MOVE_TRIPLE_AXEL},
+    .moves = {MOVE_HIGH_JUMP_KICK, MOVE_COUNTER, MOVE_PROTECT, MOVE_TRIPLE_AXEL},
     .ability = 1,
     },
     {
@@ -10853,7 +10853,7 @@ static const struct TrainerMonItemCustomMovesAbilities sParty_Wattson5[] = {
     .species = SPECIES_ZAPDOS,
     .heldItem = ITEM_ENIGMA_BERRY,
     .moves = {MOVE_THUNDER, MOVE_DRILL_PECK, MOVE_RAIN_DANCE, MOVE_LIGHT_SCREEN},
-    ability = 0,
+    .ability = 0,
     },
     {
     .iv = 255,
