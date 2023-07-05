@@ -323,7 +323,7 @@
 #define EVO_GALARIAN_SOUL_MOVE            46     // Pokémon levels up, knows specified move, and holds a Galarian Soul
 #define EVO_HISUIAN_SOUL_ITEM             47     // specified item is used on Pokémon while holding a Hisuian Soul
 
-#define EVOS_PER_MON 10
+#define EVOS_PER_MON 12
 
 // Evolution 'modes,' for GetEvolutionTargetSpecies
 #define EVO_MODE_NORMAL            0
