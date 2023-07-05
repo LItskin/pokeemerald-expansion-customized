@@ -238,7 +238,7 @@ static void HandleInputChooseAction(void)
         {
             PlaySE(SE_SELECT);
             BtlController_EmitTwoReturnValues(BUFFER_B, B_ACTION_SAFARI_RUN, 0);
-            PlayerBufferExecCompleted();
+            SafariBufferExecCompleted();
         }
         else// move cursor to run position
         {
