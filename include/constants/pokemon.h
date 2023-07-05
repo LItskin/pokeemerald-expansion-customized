@@ -321,6 +321,7 @@
 #define EVO_HISUIAN_SOUL_LEVEL            44     // Pokémon reaches specified level while holding an Hisuian Soul
 #define EVO_ALOLAN_SOUL_ITEM              45     // specified item is used on Pokémon while holding an Alolan Soul
 #define EVO_GALARIAN_SOUL_MOVE            46     // Pokémon levels up, knows specified move, and holds a Galarian Soul
+#define EVO_HISUIAN_SOUL_ITEM             47     // specified item is used on Pokémon while holding a Hisuian Soul
 
 #define EVOS_PER_MON 10
 
