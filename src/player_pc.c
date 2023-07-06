@@ -230,6 +230,7 @@ static const struct ItemSlot sNewGamePCItems[] =
     { ITEM_ALOLAN_SOUL, 3 },
     { ITEM_GALARIAN_SOUL, 2 },
     { ITEM_HISUIAN_SOUL, 7 },
+    { ITEM_TM10_HIDDEN_POWER, 1 },
     { ITEM_NONE, 0 }
 };
 
