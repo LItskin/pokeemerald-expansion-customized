@@ -58,11 +58,21 @@ RustboroCity_Gym_EventScript_GymGuide::
 	faceplayer
 	goto_if_set FLAG_DEFEATED_RUSTBORO_GYM, RustboroCity_Gym_EventScript_GymGuidePostVictory
 	msgbox RustboroCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
+	goto_if_unset FLAG_RUSTBORO_BERRY, RustboroCity_Gym_EventScript_Berry
 	release
 	end
 
 RustboroCity_Gym_EventScript_GymGuidePostVictory::
 	msgbox RustboroCity_Gym_Text_GymGuidePostVictory, MSGBOX_DEFAULT
+	goto_if_unset FLAG_RUSTBORO_BERRY, RustboroCity_Gym_EventScript_Berry
+	release
+	end
+
+RustboroCity_Gym_EventScript_Berry::
+	msgbox RustboroCity_Gym_Text_Berry, MSGBOX_DEFAULT
+	giveitem ITEM_CHARTI_BERRY
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_RUSTBORO_BERRY
 	release
 	end
 
