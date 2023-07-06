@@ -66,7 +66,7 @@
 #include "constants/songs.h"
 #include "constants/trainer_hill.h"
 #include "constants/weather.h"
-#include "items.h"
+#include "item.h"
 #include "constants/items.h"
 
 struct CableClubPlayer
