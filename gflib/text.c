@@ -972,7 +972,7 @@ static u16 RenderText(struct TextPrinter *textPrinter)
             break;
         case OPTIONS_TEXT_SPEED_FAST:
             repeats = 4;
-            break
+            break;
         }
         do {
             currChar = *textPrinter->printerTemplate.currentChar;
