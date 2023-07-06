@@ -1061,7 +1061,7 @@ static const struct InGameTrade sIngameTrades[] =
         .otName = _("SUSATO"),
         .otGender = FEMALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_FARFETCHED 
+        .requestedSpecies = SPECIES_FARFETCHD 
     }
 };
 
