@@ -3264,7 +3264,7 @@ static bool8 CanLearnFlashInParty(void)
         {
             break;
         }
-        if (!GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG) && CanMonLearnTMHM(&gPlayerParty[i], ITEM_HM05 - ITEM_TM01))
+        if (!GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG) && CanLearnTeachableMove(&gPlayerParty[i], ITEM_HM05 - ITEM_TM01))
         {
             return TRUE;
         }
