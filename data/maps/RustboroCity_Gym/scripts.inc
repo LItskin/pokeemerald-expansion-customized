@@ -147,6 +147,19 @@ RustboroCity_Gym_Text_GymGuidePostVictory:
 	.string "the stairs to the CHAMPIONSHIP!\p"
 	.string "That's got to feel awesome!$"
 
+RustboroCity_Gym_Text_Berry:
+	.string "Oh, one more thing. This might\n"
+	.string "help you on your adventure.\p"
+	.string "It's a cluster of berries that\n"
+	.string "reduce damage from super-effective\l"
+	.string "rock type moves that hit the POKéMON\l"
+	.string "that eats it.\p"
+	.string "There are plenty of berries here to\n"
+	.string "cover your adventer for a single\l"
+	.string "POKéMON, but remember one thing:\p"
+	.string "A POKéMON can only eat one berry\n"
+	.string "on it's own in a battle.$"
+
 RustboroCity_Gym_Text_JoshIntro:
 	.string "Don't take us GYM TRAINERS lightly!\n"
 	.string "I'll show you why we're better!$"
