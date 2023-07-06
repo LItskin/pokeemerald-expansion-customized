@@ -366,11 +366,11 @@ RustboroCity_EventScript_TradeCompleted::
 
 RustboroCity_Text_YouWillTradeWontYou:
 	.string "I am a traveler from the GALAR\n"
-	.string "region. I have hear that the\l"
+	.string "region. I have heard that the\l"
 	.string "{STR_VAR_1} are different than\l"
 	.string "the {STR_VAR_2} from where I'm from.\p"
 	.string "I've looked, but been unable to find\n"
-	.string "One. Would you be willing to trade\l"
+	.string "one. Would you be willing to trade\l"
 	.string "your {STR_VAR_1} for my\l"
 	.string "{STR_VAR_2}, won't you?$"
 
