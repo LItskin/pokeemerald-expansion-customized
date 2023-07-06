@@ -319,6 +319,79 @@ RustboroCity_EventScript_StolenGoodsScene::
 	releaseall
 	end
 
+RustboroCity_EventScript_FarfetchdTrade::
+	lock
+	faceplayer
+	goto_if_set FLAG_FARFETCHD_TRADE_COMPLETED, RustboroCity_EventScript_TradeCompleted
+	setvar VAR_0x8008, INGAME_TRADE_FARFETCHD
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_RESULT, GetInGameTradeSpeciesInfo
+	copyvar VAR_0x8009, VAR_RESULT
+	msgbox RustboroCity_Text_YouWillTradeWontYou, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, RustboroCity_EventScript_DeclineTrade
+	special ChoosePartyMon
+	waitstate
+	copyvar VAR_0x800A, VAR_0x8004
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, RustboroCity_EventScript_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x800A
+	specialvar VAR_RESULT, GetTradeSpecies
+	copyvar VAR_0x800B, VAR_RESULT
+	goto_if_ne VAR_RESULT, VAR_0x8009, RustboroCity_EventScript_NotRequestedMon
+	copyvar VAR_0x8004, VAR_0x8008
+	copyvar VAR_0x8005, VAR_0x800A
+	special CreateInGameTradePokemon
+	special DoInGameTradeScene
+	waitstate
+	bufferspeciesname STR_VAR_1, VAR_0x8009
+	msgbox RustboroCity_Text_MonYouTakeCare, MSGBOX_DEFAULT
+	setflag FLAG_FARFETCHD_TRADE_COMPLETED
+	release
+	end
+
+RustboroCity_EventScript_DeclineTrade::
+	msgbox RustboroCity_Text_YouWontTradeMe, MSGBOX_DEFAULT
+	release
+	end
+
+RustboroCity_EventScript_NotRequestedMon::
+	bufferspeciesname STR_VAR_1, VAR_0x8009
+	msgbox RustboroCity_Text_ThisIsntAMon, MSGBOX_DEFAULT
+	release
+	end
+
+RustboroCity_EventScript_TradeCompleted::
+	msgbox RustboroCity_Text_HasItEvolved, MSGBOX_DEFAULT
+	release
+	end
+
+RustboroCity_Text_YouWillTradeWontYou:
+	.string "I am a traveler from the GALAR\n"
+	.string "region. I have hear that the\l"
+	.string "{STR_VAR_1} are different than\l"
+	.string "the {STR_VAR_2} from where I'm from.\p"
+	.string "I've looked, but been unable to find\n"
+	.string "One. Would you be willing to trade\l"
+	.string "your {STR_VAR_1} for my\l"
+	.string "{STR_VAR_2}, won't you?$"
+
+RustboroCity_Text_MonYouTakeCare:
+	.string "Oh, yeah, right on!\p"
+	.string "{STR_VAR_1}, welcome!\n"
+	.string "{STR_VAR_2}, you take care!$"
+
+RustboroCity_Text_ThisIsntAMon:
+	.string "Oh, dear, I don't think so.\n"
+	.string "That isn't a {STR_VAR_1}.$"
+
+RustboroCity_Text_YouWontTradeMe:
+	.string "No? You won't trade me?\n"
+	.string "I guess I'll just keep looking.$"
+
+RustboroCity_Text_HasItEvolved:
+	.string "FARFETCH'D from GALAR are able to\n"
+	.string "evolve. The item RONAN had might help.\p"
+	.string "Has RONAN evolved yet?$"
+
 @ Unused
 RustboroCity_EventScript_ShadyCharacterTookOff::
 	msgbox RustboroCity_Text_ShadyCharacterTookOffTowardsTunnel, MSGBOX_DEFAULT

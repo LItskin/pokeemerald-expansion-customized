@@ -12625,3 +12625,30 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MayLinkPlaceholder[] = {
     .species = SPECIES_KYOGRE,
     }
 };
+
+static const struct TrainerMonItemCustomMovesAbilities sParty_Terryn[] = {
+    {
+    .iv = 25,
+    .lvl = 10,
+    .species = SPECIES_BUNEARY,
+    .heldItem = ITEM_COVERT_CLOAK,
+    .moves = {MOVE_POUND, MOVE_DEFENSE_CURL, MOVE_SWIFT, MOVE_NONE},
+    .ability = 2,
+    },
+    {
+    .iv = 25,
+    .lvl = 10,
+    .species = SPECIES_ZORUA,
+    .heldItem = ITEM_COVERT_CLOAK,
+    .moves = {MOVE_SCRATCH, MOVE_HONE_CLAWS, MOVE_CONFUSE_RAY, MOVE_NONE},
+    .ability = 0,
+    },
+    {
+    .iv = 25,
+    .lvl = 10,
+    .species = SPECIES_SEEDOT,
+    .heldItem = ITEM_COVERT_CLOAK,
+    .moves = {MOVE_ABSORB, MOVE_ASTONISH, MOVE_DOUBLE_TEAM, MOVE_NONE},
+    .ability = 1,
+    }
+};

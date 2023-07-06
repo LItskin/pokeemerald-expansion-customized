@@ -4779,3 +4779,13 @@ Route134_Text_HudsonPostBattle:
 	.string "Our boat drifted out to sea.\p"
 	.string "My buddy's a timid fellow, so I'm\n"
 	.string "worried about him.$"
+
+Route102_Text_MasterIntro:
+	.string "Prepare yourself!$"
+
+Route102_Text_MasterDefeated:
+	.string "Truly impressive.$"
+
+Route102_Text_MasterPostBattle:
+	.string "You have trained your POKéMON well\n"
+	.string "to be able to best mine.$"

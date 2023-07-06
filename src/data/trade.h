@@ -1047,6 +1047,21 @@ static const struct InGameTrade sIngameTrades[] =
         .otGender = FEMALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_SKITTY
+    },
+    [INGAME_TRADE_FARFETCHD] = 
+    {
+        .nickname = _("RONAN"),
+        .species = SPECIES_FARFETCHD_GALARIAN,
+        .ivs = {31, 31, 12, 30, 0, 12},
+        .abilityNum = 0,
+        .otId = 91481,
+        .conditions = {15, 15, 15, 15, 15},
+        .personality = 0x7D,
+        .heldItem = ITEM_LEAK,
+        .otName = _("SUSATO"),
+        .otGender = FEMALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_FARFETCHED 
     }
 };
 

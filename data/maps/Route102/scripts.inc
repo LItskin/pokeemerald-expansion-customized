@@ -73,6 +73,32 @@ Route102_EventScript_Allen::
 	msgbox Route102_Text_AllenPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+Route102_EventScript_Master::
+	lock
+	faceplayer
+	msgbox Route102_Text_MasterYN, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_eq Route102_EventScript_MasterNo
+	trainerbattle_single ROUTE_MASTER_TERRYN, Route102_Text_MasterIntro, Route102_Text_MasterDefeated
+	msgbox Route102_Text_MasterPostBattle, MSGBOX_AUTOCLOSE
+	msgbox Route102_Text_MasterReward, MSGBOX_DEFAULT
+	additem ITEM_COVERT_CLOAK, 1
+	compare VAR_RESULT, 0
+	goto_if_eq Route102_EventScript_MasterRewardFull
+	release
+	end
+
+Route102_EventScript_MasterNo::
+	msgbox Route102_Text_MasterNo, MSGBOX_DEFAULT
+	release
+	end
+
+Route102_EventScript_MasterRewardFull::
+	msgbox Route102_Text_MasterRewardFull
+	addpcitem ITEM_COVERT_CLOAK, 1
+	release
+	end
+
 Route102_Text_WatchMeCatchPokemon:
 	.string "WALLY: {PLAYER}…\n"
 	.string "POKéMON hide in tall grass like this,\l"
@@ -107,3 +133,22 @@ Route102_Text_RouteSignOldale:
 Route102_Text_RouteSignPetalburg:
 	.string "ROUTE 102\n"
 	.string "{LEFT_ARROW} PETALBURG CITY$"
+
+Route102_Text_MasterYN:
+	.string "I am called the Route 102 Master.\n"
+	.string "I specialize in POKéMON that are\l"
+	.string "caught in this very route. I have\l"
+	.string "four level 10 POKéMON.\p"
+	.string "Do you wish to face me in battle?$"
+
+Route102_Text_MasterNo:
+	.string "I await a worth opponent.$"
+
+Route102_Text_MasterReward:
+	.string "As a reward for defeating me,\n"
+	.string "take this item that my POKéMON\l"
+	.string "used in the battle.$"
+
+Route102_Text_MasterRewardFull:
+	.string "Ah, your bag is full…\p"
+	.string "I'll send it to your PC.$"
