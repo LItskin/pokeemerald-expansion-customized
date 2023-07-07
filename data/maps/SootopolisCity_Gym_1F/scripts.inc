@@ -145,13 +145,13 @@ SootopolisCity_Gym_1F_EventScript_GymGuide::
 	faceplayer
 	goto_if_set FLAG_DEFEATED_SOOTOPOLIS_GYM, SootopolisCity_Gym_1F_EventScript_GymGuidePostVictory
 	msgbox SootopolisCity_Gym_1F_Text_GymGuideAdvice, MSGBOX_DEFAULT
-	goto_if_unset FLAG_SOOTOPOPLIS_BERRY, SootopolisCity_Gym_EventScript_Berry
+	goto_if_unset FLAG_SOOTOPOLIS_BERRY, SootopolisCity_Gym_EventScript_Berry
 	release
 	end
 
 SootopolisCity_Gym_1F_EventScript_GymGuidePostVictory::
 	msgbox SootopolisCity_Gym_1F_Text_GymGuidePostVictory, MSGBOX_DEFAULT
-	goto_if_unset FLAG_SOOTOPOPLIS_BERRY, SootopolisCity_Gym_EventScript_Berry
+	goto_if_unset FLAG_SOOTOPOLIS_BERRY, SootopolisCity_Gym_EventScript_Berry
 	release
 	end
 
@@ -159,7 +159,7 @@ SootopolisCity_Gym_EventScript_Berry::
 	msgbox SootopolisCity_Gym_Text_Berry, MSGBOX_DEFAULT
 	giveitem ITEM_PAYAPA_BERRY
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_SOOTOPOPLIS_BERRY
+	setflag FLAG_SOOTOPOLIS_BERRY
 	release
 	end
 
