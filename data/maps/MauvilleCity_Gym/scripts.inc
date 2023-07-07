@@ -78,6 +78,7 @@ MauvilleCity_Gym_EventScript_Wattson::
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, MauvilleCity_Gym_EventScript_WattsonRematch
 	goto_if_unset FLAG_RECEIVED_TM34, MauvilleCity_Gym_EventScript_GiveShockWave2
+	call_if_unset FLAG_MAUVILLE_Z_CRYSTAL MauvilleCity_Gym_EventScript_GiveZCrystal
 	goto_if_eq VAR_NEW_MAUVILLE_STATE, 2, MauvilleCity_Gym_EventScript_CompletedNewMauville
 	msgbox MauvilleCity_Gym_Text_WattsonPostBattle, MSGBOX_DEFAULT
 	release
@@ -100,6 +101,7 @@ MauvilleCity_Gym_EventScript_WattsonDefeated::
 	special DrawWholeMapView
 	playse SE_UNLOCK
 	call MauvilleCity_Gym_EventScript_GiveShockWave
+	call_if_unset FLAG_MAUVILLE_Z_CRYSTAL MauvilleCity_Gym_EventScript_GiveZCrystal
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
@@ -110,6 +112,13 @@ MauvilleCity_Gym_EventScript_WattsonDefeated::
 	setflag FLAG_ENABLE_WATTSON_MATCH_CALL
 	release
 	end
+
+MauvilleCity_Gym_EventScript_GiveZCystal::
+	giveitem ITEM_ELECTRIUM_Z
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_MAUVILLE_Z_CRYSTAL
+	msgbox MauvilleCity_Gym_Text_ZCystal, MSGBOX_DEFAULT
+	return
 
 MauvilleCity_Gym_EventScript_GiveShockWave2::
 	giveitem ITEM_TM34
@@ -389,7 +398,12 @@ MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis:
 MauvilleCity_Gym_Text_ExplainShockWave:
 	.string "That TM34 there contains SHOCK WAVE.\p"
 	.string "It's a trustworthy move that never\n"
-	.string "misses! You can count on it!\p"
+	.string "misses! You can count on it!$"
+
+MauvilleCity_Gym_Text_ZCystal:
+	.string "Also take this Z-CRYSTAL. With your\n"
+	.string "Z-RING you can perform the electrifying\l"
+	.string "GIGAVOLT HAVOC!.\p"
 	.string "… … … … … …$"
 
 MauvilleCity_Gym_Text_RegisteredWattson:

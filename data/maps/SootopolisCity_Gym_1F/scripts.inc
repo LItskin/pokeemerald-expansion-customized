@@ -85,6 +85,7 @@ SootopolisCity_Gym_1F_EventScript_Juan::
 	goto_if_eq VAR_RESULT, TRUE, SootopolisCity_Gym_1F_EventScript_JuanRematch
 	goto_if_unset FLAG_RECEIVED_TM03, SootopolisCity_Gym_1F_EventScript_GiveWaterPulse2
 	goto_if_unset FLAG_BADGE06_GET, SootopolisCity_Gym_1F_EventScript_GoGetFortreeBadge
+	call_if_unset FLAG_SOOTOPOLIS_Z_CRYSTAL SootopolisCity_Gym_EventScript_GiveZCrystal
 	msgbox SootopolisCity_Gym_1F_Text_JuanPostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -104,6 +105,7 @@ SootopolisCity_Gym_1F_EventScript_JuanDefeated::
 	setvar VAR_0x8008, 8
 	call Common_EventScript_SetGymTrainers
 	call SootopolisCity_Gym_1F_EventScript_GiveWaterPulse
+	call_if_unset FLAG_SOOTOPOLIS_Z_CRYSTAL SootopolisCity_Gym_EventScript_GiveZCrystal
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
@@ -114,6 +116,13 @@ SootopolisCity_Gym_1F_EventScript_JuanDefeated::
 	setflag FLAG_ENABLE_JUAN_MATCH_CALL
 	release
 	end
+
+SootopolisCity_Gym_EventScript_GiveZCystal::
+	msgbox SootopolisCity_Gym_Text_ZCystal, MSGBOX_DEFAULT
+	giveitem ITEM_WATERIUM_Z
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_SOOTOPOLIS_Z_CRYSTAL
+	return
 
 SootopolisCity_Gym_1F_EventScript_GiveWaterPulse::
 	giveitem ITEM_TM03
@@ -272,6 +281,13 @@ SootopolisCity_Gym_1F_Text_ExplainWaterPulse:
 	.string "contains WATER PULSE.\p"
 	.string "In use, it will occasionally confuse\n"
 	.string "the target with ultrasonic waves.\p"
+	.string "… … … … … …$"
+
+SootopolisCity_Gym_Text_ZCystal:
+	.string "One last thing to give you some extra\n"
+	.string "flare: This Z-CRYSTAL.\p"
+	.string "Dazzle your foes with your newfound\n"
+	.string "ability to perform HYDRO VORTEX.\p"
 	.string "… … … … … …$"
 
 SootopolisCity_Gym_1F_Text_RegisteredJuan:

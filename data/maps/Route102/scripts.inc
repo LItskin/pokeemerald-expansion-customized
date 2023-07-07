@@ -76,15 +76,24 @@ Route102_EventScript_Allen::
 Route102_EventScript_Master::
 	lock
 	faceplayer
+	goto_if_set FLAG_ROUTE_102_MASTER_BEAT, Route102_EventScript_MasterBeat
 	msgbox Route102_Text_MasterYN, MSGBOX_YESNO
 	compare VAR_RESULT, 0
 	goto_if_eq Route102_EventScript_MasterNo
-	trainerbattle_single ROUTE_MASTER_TERRYN, Route102_Text_MasterIntro, Route102_Text_MasterDefeated
+	trainerbattle_single ROUTE_MASTER_TERRYN, Route102_Text_MasterIntro, Route102_Text_MasterDefeated, Route102_EventScript_MasterDefeated
+
+
+Route102_EventScript_MasterDefeated
+	setflag FLAG_ROUTE_102_MASTER_BEAT
 	msgbox Route102_Text_MasterPostBattle, MSGBOX_DEFAULT
 	msgbox Route102_Text_MasterReward, MSGBOX_DEFAULT
-	additem ITEM_COVERT_CLOAK, 1
-	compare VAR_RESULT, 0
-	goto_if_eq Route102_EventScript_MasterRewardFull
+	additem ITEM_COVERT_CLOAK
+	goto_if_eq VAR_RESULT, FALSE, Route102_EventScript_MasterRewardFull
+	release
+	end
+
+Route102_EventScript_MasterBeat::
+	msgbox Route102_Text_MasterBeat
 	release
 	end
 
@@ -152,3 +161,11 @@ Route102_Text_MasterReward:
 Route102_Text_MasterRewardFull:
 	.string "Ah, your bag is full…\p"
 	.string "I'll send it to your PC.$"
+
+Route102_Text_MasterBeat
+	.string "The COVERT CLOAK I gave you prevents\n"
+	.string "secondary effects of moves from affecting\l"
+	.string "the POKéMON that holds it.\p"
+	.string "Give it to a POKéMON to stop getting\n"
+	.string "flinched by FAKE OUT, or frozen by\l"
+	.string "ICE BEAM.\p"

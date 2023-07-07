@@ -20,6 +20,7 @@ FortreeCity_Gym_EventScript_Winona::
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, FortreeCity_Gym_EventScript_WinonaRematch
 	goto_if_unset FLAG_RECEIVED_TM40, FortreeCity_Gym_EventScript_GiveAerialAce2
+	call_if_unset FLAG_FORTREE_Z_CRYSTAL FortreeCity_Gym_EventScript_GiveZCrystal
 	msgbox FortreeCity_Gym_Text_WinonaPostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -34,6 +35,7 @@ FortreeCity_Gym_EventScript_WinonaDefeated::
 	setvar VAR_0x8008, 6
 	call Common_EventScript_SetGymTrainers
 	call FortreeCity_Gym_EventScript_GiveAerialAce
+	call_if_unset FLAG_FORTREE_Z_CRYSTAL FortreeCity_Gym_EventScript_GiveZCrystal
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
@@ -46,6 +48,13 @@ FortreeCity_Gym_EventScript_WinonaDefeated::
 	setflag FLAG_SCOTT_CALL_FORTREE_GYM
 	release
 	end
+
+FortreeCity_Gym_EventScript_GiveZCystal::
+	msgbox FortreeCity_Gym_Text_ZCystal, MSGBOX_DEFAULT
+	giveitem ITEM_FLYINIUM_Z
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_FORTREE_Z_CRYSTAL
+	return
 
 FortreeCity_Gym_EventScript_GiveAerialAce2::
 	giveitem ITEM_TM40
@@ -284,7 +293,12 @@ FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis:
 FortreeCity_Gym_Text_ExplainAerialAce:
 	.string "TM40 contains AERIAL ACE.\p"
 	.string "Its speed…\n"
-	.string "No POKéMON should be able to avoid it.\p"
+	.string "No POKéMON should be able to avoid it.$"
+
+FortreeCity_Gym_Text_ZCystal:
+	.string "You also deserve this Z-CRYSTAL.\p"
+	.string "With it and a FLYING-type move you can\l"
+	.string "perform SUPERSONIC SKYSTRIKE.\p"
 	.string "… … … … … …$"
 
 FortreeCity_Gym_Text_RegisteredWinona:

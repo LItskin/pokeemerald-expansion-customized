@@ -333,6 +333,7 @@ PetalburgCity_Gym_EventScript_NormanPostBattle::
 	call PetalburgCity_Gym_EventScript_ShouldGiveEnigmaBerry
 	goto_if_eq VAR_RESULT, TRUE, PetalburgCity_Gym_EventScript_GiveEnigmaBerry
 	goto_if_unset FLAG_RECEIVED_TM42, PetalburgCity_Gym_EventScript_GiveFacade2
+	call_if_unset FLAG_PETALBURG_Z_CRYSTAL PetalburgCity_Gym_EventScript_GiveZCrystal
 	goto_if_set FLAG_SYS_GAME_CLEAR, PetalburgCity_Gym_EventScript_NoAmountOfTrainingIsEnough
 	msgbox PetalburgCity_Gym_Text_DadGoingToKeepTraining, MSGBOX_DEFAULT
 	release
@@ -391,6 +392,7 @@ PetalburgCity_Gym_EventScript_NormanBattle::
 	call PetalburgCity_Gym_EventScript_UnlockAllDoors
 	special DrawWholeMapView
 	call PetalburgCity_Gym_EventScript_GiveFacade
+	call_if_unset FLAG_PETALBURG_Z_CRYSTAL PetalburgCity_Gym_EventScript_GiveZCrystal
 	delay 30
 	msgbox PetalburgCity_Gym_Text_DadHappyAndSad, MSGBOX_DEFAULT
 	closemessage
@@ -403,6 +405,13 @@ PetalburgCity_Gym_EventScript_NormanBattle::
 	case DIR_WEST, PetalburgCity_Gym_EventScript_WallysDadArrivesWest
 	case DIR_EAST, PetalburgCity_Gym_EventScript_WallysDadArrivesEast
 	end
+
+PetalburgCity_Gym_EventScript_GiveZCystal::
+	giveitem ITEM_NORMALIUM_Z
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_PETALBURG_Z_CRYSTAL
+	msgbox PetalburgCity_Gym_Text_ZCystal, MSGBOX_DEFAULT
+	return
 
 PetalburgCity_Gym_EventScript_GiveFacade::
 	giveitem ITEM_TM42
@@ -1307,6 +1316,12 @@ PetalburgCity_Gym_Text_ExplainFacade:
 	.string "or burned.\p"
 	.string "It might be able to turn a bad\n"
 	.string "situation into an advantage.$"
+
+PetalburgCity_Gym_Text_ZCystal:
+	.string "This is usually the first Z-CRYSTAL a\n"
+	.string "POKéMON gets on their adventure.\p"
+	.string "Now that you have it you can perform\n"
+	.string "BREAKNECK BLITZ.$"
 
 PetalburgCity_Gym_Text_DadHappyAndSad:
 	.string "DAD: As the GYM LEADER, I can't\n"

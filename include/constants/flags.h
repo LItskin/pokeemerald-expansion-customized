@@ -1246,15 +1246,15 @@
 #define FLAG_FORTREE_Z_CRYSTAL                                      0x4AD // Previously Unused Flag
 #define FLAG_MOSSDEEP_Z_CRYSTAL                                     0x4AE // Previously Unused Flag
 #define FLAG_SOOTOPOLIS_Z_CRYSTAL                                   0x4AF // Previously Unused Flag
-#define FLAG_UNUSED_0x4B0                                           0x4B0 // Unused Flag
-#define FLAG_UNUSED_0x4B1                                           0x4B1 // Unused Flag
-#define FLAG_UNUSED_0x4B2                                           0x4B2 // Unused Flag
-#define FLAG_UNUSED_0x4B3                                           0x4B3 // Unused Flag
-#define FLAG_UNUSED_0x4B4                                           0x4B4 // Unused Flag
-#define FLAG_UNUSED_0x4B5                                           0x4B5 // Unused Flag
-#define FLAG_UNUSED_0x4B6                                           0x4B6 // Unused Flag
-#define FLAG_UNUSED_0x4B7                                           0x4B7 // Unused Flag
-#define FLAG_UNUSED_0x4B8                                           0x4B8 // Unused Flag
+#define FLAG_GRASS_Z_CRYSTAL                                        0x4B0 // Unused Flag
+#define FLAG_ICE_Z_CRYSTAL                                          0x4B1 // Unused Flag
+#define FLAG_POISON_Z_CRYSTAL                                       0x4B2 // Unused Flag
+#define FLAG_GROUND_Z_CRYSTAL                                       0x4B3 // Unused Flag
+#define FLAG_BUG_Z_CRYSTAL                                          0x4B4 // Unused Flag
+#define FLAG_GHOST_Z_CRYSTAL                                        0x4B5 // Unused Flag
+#define FLAG_DRAGON_Z_CRYSTAL                                       0x4B6 // Unused Flag
+#define FLAG_DARK_Z_CRYSTAL                                         0x4B7 // Unused Flag
+#define FLAG_FAIRY_Z_CRYSTAL                                        0x4B8 // Unused Flag
 #define FLAG_UNUSED_0x4B9                                           0x4B9 // Unused Flag
 #define FLAG_UNUSED_0x4BA                                           0x4BA // Unused Flag
 #define FLAG_UNUSED_0x4BB                                           0x4BB // Unused Flag
@@ -1276,40 +1276,40 @@
 #define FLAG_UNUSED_0x4CB                                           0x4CB // Unused Flag
 #define FLAG_UNUSED_0x4CC                                           0x4CC // Unused Flag
 #define FLAG_UNUSED_0x4CD                                           0x4CD // Unused Flag
-#define FLAG_UNUSED_0x4CE                                           0x4CE // Unused Flag
-#define FLAG_UNUSED_0x4CF                                           0x4CF // Unused Flag
-#define FLAG_UNUSED_0x4D0                                           0x4D0 // Unused Flag
-#define FLAG_UNUSED_0x4D1                                           0x4D1 // Unused Flag
-#define FLAG_UNUSED_0x4D2                                           0x4D2 // Unused Flag
-#define FLAG_UNUSED_0x4D3                                           0x4D3 // Unused Flag
-#define FLAG_UNUSED_0x4D4                                           0x4D4 // Unused Flag
-#define FLAG_UNUSED_0x4D5                                           0x4D5 // Unused Flag
-#define FLAG_UNUSED_0x4D6                                           0x4D6 // Unused Flag
-#define FLAG_UNUSED_0x4D7                                           0x4D7 // Unused Flag
-#define FLAG_UNUSED_0x4D8                                           0x4D8 // Unused Flag
-#define FLAG_UNUSED_0x4D9                                           0x4D9 // Unused Flag
-#define FLAG_UNUSED_0x4DA                                           0x4DA // Unused Flag
-#define FLAG_UNUSED_0x4DB                                           0x4DB // Unused Flag
-#define FLAG_UNUSED_0x4DC                                           0x4DC // Unused Flag
-#define FLAG_UNUSED_0x4DD                                           0x4DD // Unused Flag
-#define FLAG_UNUSED_0x4DE                                           0x4DE // Unused Flag
-#define FLAG_UNUSED_0x4DF                                           0x4DF // Unused Flag
-#define FLAG_UNUSED_0x4E0                                           0x4E0 // Unused Flag
-#define FLAG_UNUSED_0x4E1                                           0x4E1 // Unused Flag
-#define FLAG_UNUSED_0x4E2                                           0x4E2 // Unused Flag
-#define FLAG_UNUSED_0x4E3                                           0x4E3 // Unused Flag
-#define FLAG_UNUSED_0x4E4                                           0x4E4 // Unused Flag
-#define FLAG_UNUSED_0x4E5                                           0x4E5 // Unused Flag
-#define FLAG_UNUSED_0x4E6                                           0x4E6 // Unused Flag
-#define FLAG_UNUSED_0x4E7                                           0x4E7 // Unused Flag
-#define FLAG_UNUSED_0x4E8                                           0x4E8 // Unused Flag
-#define FLAG_UNUSED_0x4E9                                           0x4E9 // Unused Flag
-#define FLAG_UNUSED_0x4EA                                           0x4EA // Unused Flag
-#define FLAG_UNUSED_0x4EB                                           0x4EB // Unused Flag
-#define FLAG_UNUSED_0x4EC                                           0x4EC // Unused Flag
-#define FLAG_UNUSED_0x4ED                                           0x4ED // Unused Flag
-#define FLAG_UNUSED_0x4EE                                           0x4EE // Unused Flag
-#define FLAG_UNUSED_0x4EF                                           0x4EF // Unused Flag
+#define FLAG_ROUTE_101_MASTER_BEAT                                  0x4CE // Preveously Unused Flag
+#define FLAG_ROUTE_102_MASTER_BEAT                                  0x4CF // Preveously Unused Flag
+#define FLAG_ROUTE_103_MASTER_BEAT                                  0x4D0 // Preveously Unused Flag
+#define FLAG_ROUTE_104_MASTER_BEAT                                  0x4D1 // Preveously Unused Flag
+#define FLAG_ROUTE_105_MASTER_BEAT                                  0x4D2 // Preveously Unused Flag
+#define FLAG_ROUTE_106_MASTER_BEAT                                  0x4D3 // Preveously Unused Flag
+#define FLAG_ROUTE_107_MASTER_BEAT                                  0x4D4 // Preveously Unused Flag
+#define FLAG_ROUTE_108_MASTER_BEAT                                  0x4D5 // Preveously Unused Flag
+#define FLAG_ROUTE_109_MASTER_BEAT                                  0x4D6 // Preveously Unused Flag
+#define FLAG_ROUTE_110_MASTER_BEAT                                  0x4D7 // Preveously Unused Flag
+#define FLAG_ROUTE_111_MASTER_BEAT                                  0x4D8 // Preveously Unused Flag
+#define FLAG_ROUTE_112_MASTER_BEAT                                  0x4D9 // Preveously Unused Flag
+#define FLAG_ROUTE_113_MASTER_BEAT                                  0x4DA // Preveously Unused Flag
+#define FLAG_ROUTE_114_MASTER_BEAT                                  0x4DB // Preveously Unused Flag
+#define FLAG_ROUTE_115_MASTER_BEAT                                  0x4DC // Preveously Unused Flag
+#define FLAG_ROUTE_116_MASTER_BEAT                                  0x4DD // Preveously Unused Flag
+#define FLAG_ROUTE_117_MASTER_BEAT                                  0x4DE // Preveously Unused Flag
+#define FLAG_ROUTE_118_MASTER_BEAT                                  0x4DF // Preveously Unused Flag
+#define FLAG_ROUTE_119_MASTER_BEAT                                  0x4E0 // Preveously Unused Flag
+#define FLAG_ROUTE_120_MASTER_BEAT                                  0x4E1 // Preveously Unused Flag
+#define FLAG_ROUTE_121_MASTER_BEAT                                  0x4E2 // Preveously Unused Flag
+#define FLAG_ROUTE_122_MASTER_BEAT                                  0x4E3 // Preveously Unused Flag
+#define FLAG_ROUTE_123_MASTER_BEAT                                  0x4E4 // Preveously Unused Flag
+#define FLAG_ROUTE_124_MASTER_BEAT                                  0x4E5 // Preveously Unused Flag
+#define FLAG_ROUTE_125_MASTER_BEAT                                  0x4E6 // Preveously Unused Flag
+#define FLAG_ROUTE_126_MASTER_BEAT                                  0x4E7 // Preveously Unused Flag
+#define FLAG_ROUTE_127_MASTER_BEAT                                  0x4E8 // Preveously Unused Flag
+#define FLAG_ROUTE_128_MASTER_BEAT                                  0x4E9 // Preveously Unused Flag
+#define FLAG_ROUTE_129_MASTER_BEAT                                  0x4EA // Preveously Unused Flag
+#define FLAG_ROUTE_130_MASTER_BEAT                                  0x4EB // Preveously Unused Flag
+#define FLAG_ROUTE_131_MASTER_BEAT                                  0x4EC // Preveously Unused Flag
+#define FLAG_ROUTE_132_MASTER_BEAT                                  0x4ED // Preveously Unused Flag
+#define FLAG_ROUTE_133_MASTER_BEAT                                  0x4EE // Preveously Unused Flag
+#define FLAG_ROUTE_134_MASTER_BEAT                                  0x4EF // Preveously Unused Flag
 
 #define FLAG_DEFEATED_RUSTBORO_GYM                                  0x4F0
 #define FLAG_DEFEATED_DEWFORD_GYM                                   0x4F1

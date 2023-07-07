@@ -53,6 +53,7 @@ MossdeepCity_Gym_EventScript_TateAndLiza::
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, MossdeepCity_Gym_EventScript_TateAndLizaRematch
 	goto_if_unset FLAG_RECEIVED_TM04, MossdeepCity_Gym_EventScript_GiveCalmMind2
+	call_if_unset FLAG_MOSSDEEP_Z_CRYSTAL MossdeepCity_Gym_EventScript_GiveZCrystal
 	msgbox MossdeepCity_Gym_Text_TateAndLizaPostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -78,6 +79,7 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_STEVEN
 	setvar VAR_MOSSDEEP_SPACE_CENTER_STATE, 1
 	call MossdeepCity_Gym_EventScript_GiveCalmMind
+	call_if_unset FLAG_MOSSDEEP_Z_CRYSTAL MossdeepCity_Gym_EventScript_GiveZCrystal
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
@@ -88,6 +90,13 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 	setflag FLAG_ENABLE_TATE_AND_LIZA_MATCH_CALL
 	release
 	end
+
+MossdeepCity_Gym_EventScript_GiveZCystal::
+	msgbox MossdeepCity_Gym_Text_ZCystal, MSGBOX_DEFAULT
+	giveitem ITEM_PSYCHIUM_Z
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_MOSSDEEP_Z_CRYSTAL
+	return
 
 MossdeepCity_Gym_EventScript_GiveCalmMind2::
 	giveitem ITEM_TM04
@@ -603,7 +612,14 @@ MossdeepCity_Gym_Text_ExplainCalmMind:
 	.string "TATE: It raises SP. ATK and…\n"
 	.string "LIZA: It raises SP. DEF!\p"
 	.string "TATE: It's a move that's perfect…\n"
-	.string "LIZA: For PSYCHIC POKéMON!\p"
+	.string "LIZA: For PSYCHIC POKéMON!$"
+
+MossdeepCity_Gym_Text_ZCystal:
+	.string "TATE: Here's one other thing that is…\n"
+	.string "LIZA: Perfect for PSYCHIC POKéMON:\p"
+	.string "TATE: With this Z-CRYSTAL you are able…\n"
+	.string "LIZA: Perform the special move…\p"
+	.string "BOTH: SHATTERED PSYCHE!!\p"
 	.string "… … … … … …$"
 
 MossdeepCity_Gym_Text_RegisteredTateAndLiza:

@@ -136,7 +136,8 @@ DewfordTown_Gym_EventScript_Brawly::
 	trainerbattle_single TRAINER_BRAWLY_1, DewfordTown_Gym_Text_BrawlyIntro, DewfordTown_Gym_Text_BrawlyDefeat, DewfordTown_Gym_EventScript_BrawlyDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, DewfordTown_Gym_EventScript_BrawlyRematch
-	goto_if_unset FLAG_RECEIVED_TM08, DewfordTown_Gym_EventScript_GiveBulkUp2
+	call_if_unset FLAG_RECEIVED_TM08, DewfordTown_Gym_EventScript_GiveBulkUp2
+	call_if_unset FLAG_DEWFORD_Z_CRYSTAL DewfordTown_Gym_EventScript_GiveZCrystal
 	msgbox DewfordTown_Gym_Text_BrawlyPostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -154,6 +155,7 @@ DewfordTown_Gym_EventScript_BrawlyDefeated::
 	setvar VAR_0x8008, 2
 	call Common_EventScript_SetGymTrainers
 	call DewfordTown_Gym_EventScript_GiveBulkUp
+	call_if_unset FLAG_DEWFORD_Z_CRYSTAL DewfordTown_Gym_EventScript_GiveZCrystal
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
@@ -166,6 +168,13 @@ DewfordTown_Gym_EventScript_BrawlyDefeated::
 	setflag FLAG_ENABLE_ROXANNE_FIRST_CALL
 	release
 	end
+
+DewfordTown_Gym_EventScript_GiveZCystal::
+	giveitem ITEM_FIGHTINIUM_Z
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_DEWFORD_Z_CRYSTAL
+	msgbox DewfordTown_Gym_Text_ZCystal, MSGBOX_DEFAULT
+	return
 
 DewfordTown_Gym_EventScript_GiveBulkUp::
 	giveitem ITEM_TM08
@@ -434,7 +443,13 @@ DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
 DewfordTown_Gym_Text_ExplainBulkUp:
 	.string "That TM08 contains BULK UP.\p"
 	.string "It's a move that raises both ATTACK\n"
-	.string "and DEFENSE stats.\p"
+	.string "and DEFENSE stats.$"
+
+DewfordTown_Gym_Text_ZCystal:
+	.string "This is a Z-CRYSTAL. FIGHTINIUM-Z\p"
+	.string "If you manage to get a Z-RING\n"
+	.string "you could use this to perform the\l"
+	.string "radical ALL-OUT PUMMELING.\p"
 	.string "… … … … … …$"
 
 DewfordTown_Gym_Text_RegisteredBrawly:

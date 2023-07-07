@@ -53,6 +53,7 @@ LavaridgeTown_Gym_1F_EventScript_Flannery::
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, LavaridgeTown_Gym_1F_EventScript_FlanneryRematch
 	goto_if_unset FLAG_RECEIVED_TM50, LavaridgeTown_Gym_1F_EventScript_GiveOverheat2
+	call_if_unset FLAG_LAVARIDGE_Z_CRYSTAL LavaridgeTown_Gym_EventScript_GiveZCrystal
 	msgbox LavaridgeTown_Gym_1F_Text_FlanneryPostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -72,6 +73,7 @@ LavaridgeTown_Gym_1F_EventScript_FlanneryDefeated::
 	setflag FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLY
 	setvar VAR_LAVARIDGE_TOWN_STATE, 1
 	call LavaridgeTown_Gym_1F_EventScript_GiveOverheat
+	call_if_unset FLAG_LAVARIDGE_Z_CRYSTAL LavaridgeTown_Gym_EventScript_GiveZCrystal
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
@@ -82,6 +84,13 @@ LavaridgeTown_Gym_1F_EventScript_FlanneryDefeated::
 	setflag FLAG_ENABLE_FLANNERY_MATCH_CALL
 	release
 	end
+
+LavaridgeTown_Gym_EventScript_GiveZCystal::
+	msgbox LavaridgeTown_Gym_Text_ZCystal, MSGBOX_DEFAULT
+	giveitem ITEM_FIRIUM_Z
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_LAVARIDGE_Z_CRYSTAL
+	return
 
 LavaridgeTown_Gym_1F_EventScript_GiveOverheat2::
 	giveitem ITEM_TM50
@@ -374,6 +383,11 @@ LavaridgeTown_Gym_1F_Text_ExplainOverheat:
 	.string "But it also sharply cuts the SP. ATK\n"
 	.string "of the POKéMON using it. It might not\l"
 	.string "be suitable for longer battles.$"
+
+LavaridgeTown_Gym_Text_ZCystal:
+	.string "Oh, right! I'm also supposed to give you\n"
+	.string "this Z-Crystal. You can use it to perform\l"
+	.string "INFERNO OVERDRIVE.$"
 
 LavaridgeTown_Gym_1F_Text_RegisteredFlannery:
 	.string "Registered GYM LEADER FLANNERY\n"
