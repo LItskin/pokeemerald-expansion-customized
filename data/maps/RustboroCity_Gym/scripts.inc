@@ -152,7 +152,7 @@ RustboroCity_Gym_Text_Berry:
 	.string "help you on your adventure.\p"
 	.string "It's a cluster of berries that\n"
 	.string "reduce damage from super-effective\l"
-	.string "rock type moves that hit the POKéMON\l"
+	.string "ROCK-type moves that hit the POKéMON\l"
 	.string "that eats it.\p"
 	.string "There are plenty of berries here to\n"
 	.string "cover your adventer for a single\l"

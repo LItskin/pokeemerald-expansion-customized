@@ -102,11 +102,21 @@ FortreeCity_Gym_EventScript_GymGuide::
 	faceplayer
 	goto_if_set FLAG_DEFEATED_FORTREE_GYM, FortreeCity_Gym_EventScript_GymGuidePostVictory
 	msgbox FortreeCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
+	goto_if_unset FLAG_FORTREE_BERRY, FortreeCity_Gym_EventScript_Berry
 	release
 	end
 
 FortreeCity_Gym_EventScript_GymGuidePostVictory::
 	msgbox FortreeCity_Gym_Text_GymGuidePostVictory, MSGBOX_DEFAULT
+	goto_if_unset FLAG_FORTREE_BERRY, FortreeCity_Gym_EventScript_Berry
+	release
+	end
+
+FortreeCity_Gym_EventScript_Berry::
+	msgbox FortreeCity_Gym_Text_Berry, MSGBOX_DEFAULT
+	giveitem ITEM_COBA_BERRY
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_FORTREE_BERRY
 	release
 	end
 
@@ -146,6 +156,17 @@ FortreeCity_Gym_Text_GymGuideAdvice:
 FortreeCity_Gym_Text_GymGuidePostVictory:
 	.string "You did it!\n"
 	.string "You've achieved liftoff!$"
+
+FortreeCity_Gym_Text_Berry:
+	.string "You know the drill! Here is a cluster\n"
+	.string "of berries that reduce damage from\l"
+	.string "super-effective FLYING-type moves that\l"
+	.string "hit the POKéMON that eats it.\p"
+	.string "There are plenty of berries here to\n"
+	.string "cover your adventer for a single\l"
+	.string "POKéMON, but remember one thing:\p"
+	.string "A POKéMON can only eat one berry\n"
+	.string "on it's own in a battle.$"
 
 FortreeCity_Gym_Text_JaredIntro:
 	.string "Behold the elegant battle style of\n"

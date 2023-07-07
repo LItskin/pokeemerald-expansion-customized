@@ -226,11 +226,21 @@ MauvilleCity_Gym_EventScript_GymGuide::
 	faceplayer
 	goto_if_set FLAG_DEFEATED_MAUVILLE_GYM, MauvilleCity_Gym_EventScript_GymGuidePostVictory
 	msgbox MauvilleCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
+	goto_if_unset FLAG_MAUVILLE_BERRY, MauvilleCity_Gym_EventScript_Berry
 	release
 	end
 
 MauvilleCity_Gym_EventScript_GymGuidePostVictory::
 	msgbox MauvilleCity_Gym_Text_GymGuidePostVictory, MSGBOX_DEFAULT
+	goto_if_unset FLAG_MAUVILLE_BERRY, MauvilleCity_Gym_EventScript_Berry
+	release
+	end
+
+MauvilleCity_Gym_EventScript_Berry::
+	msgbox MauvilleCity_Gym_Text_Berry, MSGBOX_DEFAULT
+	giveitem ITEM_WACAN_BERRY
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_MAUVILLE_BERRY
 	release
 	end
 
@@ -270,6 +280,19 @@ MauvilleCity_Gym_Text_GymGuideAdvice:
 MauvilleCity_Gym_Text_GymGuidePostVictory:
 	.string "Whoa, you're electrifying!\n"
 	.string "You've powered the door open!$"
+
+MauvilleCity_Gym_Text_Berry:
+	.string "Here is a small gift that might\n"
+	.string "help you on your adventure.\p"
+	.string "It's a cluster of berries that\n"
+	.string "reduce damage from super-effective\l"
+	.string "ELECTRIC-type moves that hit the\l"
+	.string "POKéMON that eats it.\p"
+	.string "There are plenty of berries here to\n"
+	.string "cover your adventer for a single\l"
+	.string "POKéMON, but remember one thing:\p"
+	.string "A POKéMON can only eat one berry\n"
+	.string "on it's own in a battle.$"
 
 MauvilleCity_Gym_Text_KirkIntro:
 	.string "My electric soul, it'll shatter your\n"

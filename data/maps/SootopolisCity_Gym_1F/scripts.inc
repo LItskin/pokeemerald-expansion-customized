@@ -145,11 +145,21 @@ SootopolisCity_Gym_1F_EventScript_GymGuide::
 	faceplayer
 	goto_if_set FLAG_DEFEATED_SOOTOPOLIS_GYM, SootopolisCity_Gym_1F_EventScript_GymGuidePostVictory
 	msgbox SootopolisCity_Gym_1F_Text_GymGuideAdvice, MSGBOX_DEFAULT
+	goto_if_unset FLAG_SOOTOPOPLIS_BERRY, SootopolisCity_Gym_EventScript_Berry
 	release
 	end
 
 SootopolisCity_Gym_1F_EventScript_GymGuidePostVictory::
 	msgbox SootopolisCity_Gym_1F_Text_GymGuidePostVictory, MSGBOX_DEFAULT
+	goto_if_unset FLAG_SOOTOPOPLIS_BERRY, SootopolisCity_Gym_EventScript_Berry
+	release
+	end
+
+SootopolisCity_Gym_EventScript_Berry::
+	msgbox SootopolisCity_Gym_Text_Berry, MSGBOX_DEFAULT
+	giveitem ITEM_PAYAPA_BERRY
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_SOOTOPOPLIS_BERRY
 	release
 	end
 
@@ -193,6 +203,17 @@ SootopolisCity_Gym_1F_Text_GymGuidePostVictory:
 	.string "Okay! Check out your TRAINER CARD.\p"
 	.string "If you've gotten all the BADGES, you're\n"
 	.string "set for the POKéMON LEAGUE challenge!$"
+
+SootopolisCity_Gym_Text_Berry:
+	.string "You know the drill! Here is a cluster\n"
+	.string "of berries that reduce damage from\l"
+	.string "super-effective WATER-type moves that\l"
+	.string "hit the POKéMON that eats it.\p"
+	.string "There are plenty of berries here to\n"
+	.string "cover your adventer for a single\l"
+	.string "POKéMON, but remember one thing:\p"
+	.string "A POKéMON can only eat one berry\n"
+	.string "on it's own in a battle.$"
 
 SootopolisCity_Gym_1F_Text_JuanIntro:
 	.string "Let me ask you.\n"

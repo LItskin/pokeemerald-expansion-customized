@@ -252,11 +252,21 @@ DewfordTown_Gym_EventScript_GymGuide::
 	faceplayer
 	goto_if_set FLAG_DEFEATED_DEWFORD_GYM, DewfordTown_Gym_EventScript_GymGuidePostVictory
 	msgbox DewfordTown_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
+	goto_if_unset FLAG_DEWFORD_BERRY, DewfordCity_Gym_EventScript_Berry
 	release
 	end
 
 DewfordTown_Gym_EventScript_GymGuidePostVictory::
 	msgbox DewfordTown_Gym_Text_GymGuidePostVictory, MSGBOX_DEFAULT
+	goto_if_unset FLAG_DEWFORD_BERRY, DewfordCity_Gym_EventScript_Berry
+	release
+	end
+
+DewfordCity_Gym_EventScript_Berry::
+	msgbox DewfordCity_Gym_Text_Berry, MSGBOX_DEFAULT
+	giveitem ITEM_CHOPLE_BERRY
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_DEWFORD_BERRY
 	release
 	end
 
@@ -301,6 +311,19 @@ DewfordTown_Gym_Text_GymGuideAdvice:
 DewfordTown_Gym_Text_GymGuidePostVictory:
 	.string "Whoah! It's turned too bright in here!\p"
 	.string "Your future is bright, too!$"
+
+DewfordCity_Gym_Text_Berry:
+	.string "Here is one last thing that might\n"
+	.string "help you on your adventure.\p"
+	.string "It's a cluster of berries that\n"
+	.string "reduce damage from super-effective\l"
+	.string "FIGHTING-type moves that hit the\l"
+	.string "POKéMON that eats it.\p"
+	.string "There are plenty of berries here to\n"
+	.string "cover your adventer for a single\l"
+	.string "POKéMON, but remember one thing:\p"
+	.string "A POKéMON can only eat one berry\n"
+	.string "on it's own in a battle.$"
 
 DewfordTown_Gym_Text_TakaoIntro:
 	.string "Might is right!\n"

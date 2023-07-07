@@ -1231,13 +1231,13 @@
 #define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
 #define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
 #define FLAG_RUSTBORO_BERRY                                         0x4A0 // Previously Unused Flag
-#define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
-#define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag
-#define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag
-#define FLAG_UNUSED_0x4A4                                           0x4A4 // Unused Flag
-#define FLAG_UNUSED_0x4A5                                           0x4A5 // Unused Flag
-#define FLAG_UNUSED_0x4A6                                           0x4A6 // Unused Flag
-#define FLAG_UNUSED_0x4A7                                           0x4A7 // Unused Flag
+#define FLAG_DEWFORD_BERRY                                          0x4A1 // Previously Unused Flag
+#define FLAG_MAUVILLE_BERRY                                         0x4A2 // Previously Unused Flag
+#define FLAG_LAVARIDGE_BERRY                                        0x4A3 // Previously Unused Flag
+#define FLAG_PETALBURG_BERRY                                        0x4A4 // Previously Unused Flag
+#define FLAG_FORTREE_BERRY                                          0x4A5 // Previously Unused Flag
+#define FLAG_MOSSDEEP_BERRY                                         0x4A6 // Previously Unused Flag
+#define FLAG_SOOTOPOLIS_BERRY                                       0x4A7 // Previously Unused Flag
 #define FLAG_UNUSED_0x4A8                                           0x4A8 // Unused Flag
 #define FLAG_UNUSED_0x4A9                                           0x4A9 // Unused Flag
 #define FLAG_UNUSED_0x4AA                                           0x4AA // Unused Flag

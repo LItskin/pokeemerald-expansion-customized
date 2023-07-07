@@ -1111,11 +1111,21 @@ PetalburgCity_Gym_EventScript_GymGuide::
 	faceplayer
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_GymGuidePostVictory
 	msgbox PetalburgCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
+	goto_if_unset FLAG_PETALBURG_BERRY, PetalburgCity_Gym_EventScript_Berry
 	release
 	end
 
 PetalburgCity_Gym_EventScript_GymGuidePostVictory::
 	msgbox PetalburgCity_Gym_Text_GymGuidePostVictory, MSGBOX_DEFAULT
+	goto_if_unset FLAG_PETALBURG_BERRY, PetalburgCity_Gym_EventScript_Berry
+	release
+	end
+
+PetalburgCity_Gym_EventScript_Berry::
+	msgbox PetalburgCity_Gym_Text_Berry, MSGBOX_DEFAULT
+	giveitem ITEM_CHILAN_BERRY
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_PETALBURG_BERRY
 	release
 	end
 
@@ -1351,6 +1361,18 @@ PetalburgCity_Gym_Text_GymGuidePostVictory:
 	.string "your own father!\p"
 	.string "Like, whoa!\n"
 	.string "What a stunning turn of events!$"
+
+PetalburgCity_Gym_Text_Berry:
+	.string "Here is something a little different\n"
+	.string "to help you on your adventure.\p"
+	.string "It's a cluster of berries that\n"
+	.string "reduce damage from ANY NORMAL-type\l"
+	.string "moves that hit the POKéMON that eats it.\p"
+	.string "There are plenty of berries here to\n"
+	.string "cover your adventer for a single\l"
+	.string "POKéMON, but remember one thing:\p"
+	.string "A POKéMON can only eat one berry\n"
+	.string "on it's own in a battle.$"
 
 PetalburgCity_Gym_Text_RandallIntro:
 	.string "The ability to attack before the\n"

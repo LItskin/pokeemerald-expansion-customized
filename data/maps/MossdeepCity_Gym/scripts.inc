@@ -268,11 +268,21 @@ MossdeepCity_Gym_EventScript_GymGuide::
 	faceplayer
 	goto_if_set FLAG_DEFEATED_MOSSDEEP_GYM, MossdeepCity_Gym_EventScript_GymGuidePostVictory
 	msgbox MossdeepCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
+	goto_if_unset FLAG_MOSSDEEP_BERRY, MossdeepCity_Gym_EventScript_Berry
 	release
 	end
 
 MossdeepCity_Gym_EventScript_GymGuidePostVictory::
 	msgbox MossdeepCity_Gym_Text_GymGuidePostVictory, MSGBOX_DEFAULT
+	goto_if_unset FLAG_MOSSDEEP_BERRY, MossdeepCity_Gym_EventScript_Berry
+	release
+	end
+
+MossdeepCity_Gym_EventScript_Berry::
+	msgbox MossdeepCity_Gym_Text_Berry, MSGBOX_DEFAULT
+	giveitem ITEM_PAYAPA_BERRY
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_MOSSDEEP_BERRY
 	release
 	end
 
@@ -381,6 +391,17 @@ MossdeepCity_Gym_Text_GymGuideAdvice:
 MossdeepCity_Gym_Text_GymGuidePostVictory:
 	.string "Wow, you're astounding!\n"
 	.string "You're one great TRAINER!$"
+
+MossdeepCity_Gym_Text_Berry:
+	.string "You know the drill! Here is a cluster\n"
+	.string "of berries that reduce damage from\l"
+	.string "super-effective PSYCHIC-type moves\l"
+	.string "that hit the POKéMON that eats it.\p"
+	.string "There are plenty of berries here to\n"
+	.string "cover your adventer for a single\l"
+	.string "POKéMON, but remember one thing:\p"
+	.string "A POKéMON can only eat one berry\n"
+	.string "on it's own in a battle.$"
 
 MossdeepCity_Gym_Text_PrestonIntro:
 	.string "Battles hinge on the strength of your\n"

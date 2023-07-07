@@ -155,11 +155,21 @@ LavaridgeTown_Gym_1F_EventScript_GymGuide::
 	faceplayer
 	goto_if_set FLAG_DEFEATED_LAVARIDGE_GYM, LavaridgeTown_Gym_1F_EventScript_GymGuidePostVictory
 	msgbox LavaridgeTown_Gym_1F_Text_GymGuideAdvice, MSGBOX_DEFAULT
+	goto_if_unset FLAG_LAVARIDGE_BERRY, LavaridgeCity_Gym_EventScript_Berry
 	release
 	end
 
 LavaridgeTown_Gym_1F_EventScript_GymGuidePostVictory::
 	msgbox LavaridgeTown_Gym_1F_Text_GymGuidePostVictory, MSGBOX_DEFAULT
+	goto_if_unset FLAG_LAVARIDGE_BERRY, LavaridgeCity_Gym_EventScript_Berry
+	release
+	end
+
+LavaridgeCity_Gym_EventScript_Berry::
+	msgbox LavaridgeCity_Gym_Text_Berry, MSGBOX_DEFAULT
+	giveitem ITEM_OCCA_BERRY
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_LAVARIDGE_BERRY
 	release
 	end
 
@@ -198,6 +208,19 @@ LavaridgeTown_Gym_1F_Text_GymGuideAdvice:
 
 LavaridgeTown_Gym_1F_Text_GymGuidePostVictory:
 	.string "Yow! That was a scorching-hot battle!$"
+
+LavaridgeCity_Gym_Text_Berry:
+	.string "Here is something that might\n"
+	.string "help you on your adventure.\p"
+	.string "It's a cluster of berries that\n"
+	.string "reduce damage from super-effective\l"
+	.string "FIRE-type moves that hit the POKéMON\l"
+	.string "that eats it.\p"
+	.string "There are plenty of berries here to\n"
+	.string "cover your adventer for a single\l"
+	.string "POKéMON, but remember one thing:\p"
+	.string "A POKéMON can only eat one berry\n"
+	.string "on it's own in a battle.$"
 
 LavaridgeTown_Gym_1F_Text_ColeIntro:
 	.string "Owowowowow!\n"
