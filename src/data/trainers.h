@@ -10263,9 +10263,9 @@ const struct Trainer gTrainers[] = {
 
     [ROUTE_MASTER_TERRYN] =
     {
-        .trainerClass = TRAINER_CLASS_EXPERT,
+        .trainerClass = TRAINER_CLASS_ROUTE_MASTER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_EXPERT_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("TERRYN"),
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,

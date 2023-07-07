@@ -80,7 +80,7 @@ Route102_EventScript_Master::
 	compare VAR_RESULT, 0
 	goto_if_eq Route102_EventScript_MasterNo
 	trainerbattle_single ROUTE_MASTER_TERRYN, Route102_Text_MasterIntro, Route102_Text_MasterDefeated
-	msgbox Route102_Text_MasterPostBattle, MSGBOX_AUTOCLOSE
+	msgbox Route102_Text_MasterPostBattle, MSGBOX_DEFAULT
 	msgbox Route102_Text_MasterReward, MSGBOX_DEFAULT
 	additem ITEM_COVERT_CLOAK, 1
 	compare VAR_RESULT, 0
