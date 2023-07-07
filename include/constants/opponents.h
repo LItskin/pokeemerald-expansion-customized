@@ -863,6 +863,6 @@
 
 #define ROUTE_MASTER_TERRYN                 855
 #define TRAINERS_COUNT                      856
-#define MAX_TRAINERS_COUNT                  964
+#define MAX_TRAINERS_COUNT                  964//Originally 864
 
 #endif  // GUARD_CONSTANTS_OPPONENTS_H
