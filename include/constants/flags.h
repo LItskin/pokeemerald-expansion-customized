@@ -1238,14 +1238,14 @@
 #define FLAG_FORTREE_BERRY                                          0x4A5 // Previously Unused Flag
 #define FLAG_MOSSDEEP_BERRY                                         0x4A6 // Previously Unused Flag
 #define FLAG_SOOTOPOLIS_BERRY                                       0x4A7 // Previously Unused Flag
-#define FLAG_UNUSED_0x4A8                                           0x4A8 // Unused Flag
-#define FLAG_UNUSED_0x4A9                                           0x4A9 // Unused Flag
-#define FLAG_UNUSED_0x4AA                                           0x4AA // Unused Flag
-#define FLAG_UNUSED_0x4AB                                           0x4AB // Unused Flag
-#define FLAG_UNUSED_0x4AC                                           0x4AC // Unused Flag
-#define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
-#define FLAG_UNUSED_0x4AE                                           0x4AE // Unused Flag
-#define FLAG_UNUSED_0x4AF                                           0x4AF // Unused Flag
+#define FLAG_RUSTBORO_Z_CRYSTAL                                     0x4A8 // Previously Unused Flag
+#define FLAG_DEWFORD_Z_CRYSTAL                                      0x4A9 // Previously Unused Flag
+#define FLAG_MAUVILLE_Z_CRYSTAL                                     0x4AA // Previously Unused Flag
+#define FLAG_LAVARIDGE_Z_CRYSTAL                                    0x4AB // Previously Unused Flag
+#define FLAG_PETALBURG_Z_CRYSTAL                                    0x4AC // Previously Unused Flag
+#define FLAG_FORTREE_Z_CRYSTAL                                      0x4AD // Previously Unused Flag
+#define FLAG_MOSSDEEP_Z_CRYSTAL                                     0x4AE // Previously Unused Flag
+#define FLAG_SOOTOPOLIS_Z_CRYSTAL                                   0x4AF // Previously Unused Flag
 #define FLAG_UNUSED_0x4B0                                           0x4B0 // Unused Flag
 #define FLAG_UNUSED_0x4B1                                           0x4B1 // Unused Flag
 #define FLAG_UNUSED_0x4B2                                           0x4B2 // Unused Flag

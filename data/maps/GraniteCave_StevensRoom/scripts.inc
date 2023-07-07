@@ -13,6 +13,10 @@ GraniteCave_StevensRoom_EventScript_Steven::
 	msgbox GraniteCave_StevensRoom_Text_ThankYouTakeThis, MSGBOX_DEFAULT
 	giveitem ITEM_TM47
 	call_if_eq VAR_RESULT, FALSE, GraniteCave_StevensRoom_EventScript_BagFull
+	msgbox GraniteCave_StevensRoom_Text_ZRing, MSGBOX_DEFAULT
+	giveitem ITEM_Z_POWER_RING
+	giveitem ITEM_STEELIUM_Z
+	call_if_eq VAR_RESULT, FALSE, GraniteCave_StevensRoom_EventScript_BagFull
 	msgbox GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister, MSGBOX_DEFAULT
 	closemessage
 	delay 30
@@ -96,6 +100,19 @@ GraniteCave_StevensRoom_Text_ThankYouTakeThis:
 	.string "I'll give you this TM.\p"
 	.string "It contains my favorite move,\n"
 	.string "STEEL WING.$"
+
+GraniteCave_StevensRoom_Text_ZRing:
+	.string "Since you're making an attempt at\n"
+	.string "beating the GYMs, this will help\l"
+	.string "you access greater potential from\l"
+	.string "your bond with your POKéMON.\p"
+	.string "It's a Z-RING, which allows you to\n"
+	.string "perform Z-MOVES with your POKéMON if\l"
+	.string "they hold a Z-CRYSTAL that matches\l"
+	.string "the type of at least on of their moves.\p"
+	.string "Here. I'll also give you a STEELIUM_Z.\p"
+	.string "You can use it with the TM I just gave\n"
+	.string "you.$"
 
 GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister:
 	.string "STEVEN: Your POKéMON appear quite\n"
