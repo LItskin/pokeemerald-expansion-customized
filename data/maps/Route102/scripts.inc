@@ -81,6 +81,8 @@ Route102_EventScript_Master::
 	compare VAR_RESULT, 0
 	goto_if_eq Route102_EventScript_MasterNo
 	trainerbattle_single ROUTE_MASTER_TERRYN, Route102_Text_MasterIntro, Route102_Text_MasterDefeated, Route102_EventScript_MasterDefeated
+	release
+	end
 
 
 Route102_EventScript_MasterDefeated
