@@ -203,6 +203,7 @@ EWRAM_DATA u32 gStatuses3[MAX_BATTLERS_COUNT] = {0};
 EWRAM_DATA u32 gStatuses4[MAX_BATTLERS_COUNT] = {0};
 EWRAM_DATA struct DisableStruct gDisableStructs[MAX_BATTLERS_COUNT] = {0};
 EWRAM_DATA u16 gPauseCounterBattle = 0;
+EWRAM_DATA u8 catchMul = 0;
 EWRAM_DATA u16 gPaydayMoney = 0;
 EWRAM_DATA u16 gRandomTurnNumber = 0;
 EWRAM_DATA u8 gBattleCommunication[BATTLE_COMMUNICATION_ENTRIES_COUNT] = {0};
@@ -3190,19 +3191,19 @@ static void BattleStartClearSetData(void)
     gBattleStruct->safariPkblThrowCounter = 0;
     //Increase catch odds
     int catchMul;//multiply rate by 2+ and divide by 2 to get a bonus in 50% increments
-    if (gSpeciesInfo[GetMonData(&gEnemyParty[0], MON_DATA_SPECIES)].catchRate > 192)
+    if (gSpeciesInfo[GetMonData(&gEnemyParty[0], MON_DATA_SPECIES)].catchRate >= 192)
     {
         catchMul = 2;
-    } else if (gSpeciesInfo[GetMonData(&gEnemyParty[0], MON_DATA_SPECIES)].catchRate > 128)
+    } else if (gSpeciesInfo[GetMonData(&gEnemyParty[0], MON_DATA_SPECIES)].catchRate >= 128)
     {
         catchMul = 3;
-    } else if (gSpeciesInfo[GetMonData(&gEnemyParty[0], MON_DATA_SPECIES)].catchRate > 64)
+    } else if (gSpeciesInfo[GetMonData(&gEnemyParty[0], MON_DATA_SPECIES)].catchRate >= 64)
     {
         catchMul = 6;
-    } else if (gSpeciesInfo[GetMonData(&gEnemyParty[0], MON_DATA_SPECIES)].catchRate > 32)
+    } else if (gSpeciesInfo[GetMonData(&gEnemyParty[0], MON_DATA_SPECIES)].catchRate >= 32)
     {
         catchMul = 12;
-    } else if (gSpeciesInfo[GetMonData(&gEnemyParty[0], MON_DATA_SPECIES)].catchRate > 8)
+    } else if (gSpeciesInfo[GetMonData(&gEnemyParty[0], MON_DATA_SPECIES)].catchRate >= 8)
     {
         catchMul = 20;
     } else {
