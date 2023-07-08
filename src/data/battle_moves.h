@@ -14149,4 +14149,22 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = 0
     },
+    [MOVE_BITING_FROST] =//custom moves start
+    {
+        #if B_UPDATED_MOVE_DATA >= GEN_6
+            .accuracy = 85,
+        #else
+            .accuracy = 75,
+        #endif
+        .effect = EFFECT_FROSTBITE_HIT,
+        .power = 0,
+        .type = TYPE_ICE,
+        .pp = 15,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+        .split = SPLIT_STATUS,
+        .zMoveEffect = Z_EFFECT_SPDEF_UP_1,
+    },
 };

@@ -3280,8 +3280,10 @@ static const u8 sTM51Desc[] = _(
     "leaves the foe with\n"
     "at least 1 HP.");
 
-static const u8 sTM52Desc[] = _( // Todo
-    "?????");
+static const u8 sTM52Desc[] = _(
+    "An attack that\n"
+    "inflicts frostbite\n"
+    "on opponent.");
 
 static const u8 sTM53Desc[] = _( // Todo
     "?????");

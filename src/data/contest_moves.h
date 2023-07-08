@@ -6066,6 +6066,14 @@ const struct ContestMove gContestMoves[MOVES_COUNT] =
     [MOVE_PSYBLADE] = {0}, // TODO
 
     [MOVE_HYDRO_STEAM] = {0}, // TODO
+
+    [MOVE_BITING_FROST] =
+    {
+        .effect = CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .comboStarterId = 0,
+        .comboMoves = {COMBO_STARTER_HAIL},
+    },
 };
 
 const struct ContestEffect gContestEffects[] =

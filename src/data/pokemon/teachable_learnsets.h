@@ -2950,6 +2950,7 @@ static const u16 sClefairyTeachableLearnset[] = {
     MOVE_METEOR_BEAM,
     MOVE_MISTY_EXPLOSION,
     MOVE_DUAL_WINGBEAT,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -3101,6 +3102,7 @@ static const u16 sClefableTeachableLearnset[] = {
     MOVE_METEOR_BEAM,
     MOVE_MISTY_EXPLOSION,
     MOVE_DUAL_WINGBEAT,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -7760,6 +7762,7 @@ static const u16 sSeelTeachableLearnset[] = {
     MOVE_BELCH,
     MOVE_CONFIDE,
     MOVE_SMART_STRIKE,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -7832,6 +7835,7 @@ static const u16 sDewgongTeachableLearnset[] = {
     MOVE_CONFIDE,
     MOVE_SMART_STRIKE,
     MOVE_LIQUIDATION,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -8110,6 +8114,7 @@ static const u16 sShellderTeachableLearnset[] = {
     MOVE_ICE_SPINNER,
     MOVE_SNOWSCAPE,
     MOVE_CHILLING_WATER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -8202,6 +8207,7 @@ static const u16 sCloysterTeachableLearnset[] = {
     MOVE_ICE_SPINNER,
     MOVE_SNOWSCAPE,
     MOVE_CHILLING_WATER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -11424,6 +11430,7 @@ static const u16 sJynxTeachableLearnset[] = {
     MOVE_AURORA_VEIL,
     MOVE_EXPANDING_FORCE,
     MOVE_TRIPLE_AXEL,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -12009,6 +12016,7 @@ static const u16 sLaprasTeachableLearnset[] = {
     MOVE_LIQUIDATION,
     MOVE_BODY_PRESS,
     MOVE_LIFE_DEW,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -13165,6 +13173,7 @@ static const u16 sArticunoTeachableLearnset[] = {
     MOVE_TERA_BLAST,
     MOVE_ICE_SPINNER,
     MOVE_SNOWSCAPE,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -14184,6 +14193,7 @@ static const u16 sMewTeachableLearnset[] = {
     MOVE_POUNCE,
     MOVE_TRAILBLAZE,
     MOVE_CHILLING_WATER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -16336,6 +16346,7 @@ static const u16 sTogeticTeachableLearnset[] = {
     MOVE_SMART_STRIKE,
     MOVE_LIFE_DEW,
     MOVE_DUAL_WINGBEAT,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -19883,6 +19894,7 @@ static const u16 sSneaselTeachableLearnset[] = {
     MOVE_TERA_BLAST,
     MOVE_SNOWSCAPE,
     MOVE_TRAILBLAZE,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -20311,6 +20323,7 @@ static const u16 sSwinubTeachableLearnset[] = {
     MOVE_ICICLE_CRASH,
     MOVE_FREEZE_DRY,
     MOVE_CONFIDE,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -20388,6 +20401,7 @@ static const u16 sPiloswineTeachableLearnset[] = {
     MOVE_CONFIDE,
     MOVE_HIGH_HORSEPOWER,
     MOVE_STOMPING_TANTRUM,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -20747,6 +20761,7 @@ static const u16 sDelibirdTeachableLearnset[] = {
     MOVE_SNOWSCAPE,
     MOVE_TRAILBLAZE,
     MOVE_CHILLING_WATER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -21792,6 +21807,7 @@ static const u16 sSmoochumTeachableLearnset[] = {
     MOVE_DRAINING_KISS,
     MOVE_CONFIDE,
     MOVE_AURORA_VEIL,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -22437,6 +22453,7 @@ static const u16 sSuicuneTeachableLearnset[] = {
     MOVE_CONFIDE,
     MOVE_LASER_FOCUS,
     MOVE_LIQUIDATION,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -22853,6 +22870,7 @@ static const u16 sLugiaTeachableLearnset[] = {
     MOVE_LASER_FOCUS,
     MOVE_SCALE_SHOT,
     MOVE_DUAL_WINGBEAT,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -25335,6 +25353,7 @@ static const u16 sRaltsTeachableLearnset[] = {
     MOVE_LIFE_DEW,
     MOVE_EXPANDING_FORCE,
     MOVE_TERA_BLAST,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -25435,6 +25454,7 @@ static const u16 sKirliaTeachableLearnset[] = {
     MOVE_EXPANDING_FORCE,
     MOVE_TRIPLE_AXEL,
     MOVE_TERA_BLAST,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -25548,6 +25568,7 @@ static const u16 sGardevoirTeachableLearnset[] = {
     MOVE_MISTY_EXPLOSION,
     MOVE_TRIPLE_AXEL,
     MOVE_TERA_BLAST,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -31515,6 +31536,7 @@ static const u16 sFeebasTeachableLearnset[] = {
     MOVE_SCALD,
     MOVE_CONFIDE,
     MOVE_SCALE_SHOT,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -31596,6 +31618,7 @@ static const u16 sMiloticTeachableLearnset[] = {
     MOVE_SKITTER_SMACK,
     MOVE_FLIP_TURN,
     MOVE_TRIPLE_AXEL,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -31670,6 +31693,7 @@ static const u16 sCastformTeachableLearnset[] = {
     MOVE_WORK_UP,
     MOVE_HURRICANE,
     MOVE_CONFIDE,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -32528,6 +32552,7 @@ static const u16 sSnoruntTeachableLearnset[] = {
     MOVE_SNOWSCAPE,
     MOVE_TRAILBLAZE,
     MOVE_CHILLING_WATER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -32610,6 +32635,7 @@ static const u16 sGlalieTeachableLearnset[] = {
     MOVE_SNOWSCAPE,
     MOVE_TRAILBLAZE,
     MOVE_CHILLING_WATER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -32680,6 +32706,7 @@ static const u16 sSphealTeachableLearnset[] = {
     MOVE_FROST_BREATH,
     MOVE_CONFIDE,
     MOVE_STEEL_ROLLER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -32743,6 +32770,7 @@ static const u16 sSealeoTeachableLearnset[] = {
     MOVE_FROST_BREATH,
     MOVE_CONFIDE,
     MOVE_STEEL_ROLLER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -32820,6 +32848,7 @@ static const u16 sWalreinTeachableLearnset[] = {
     MOVE_LIQUIDATION,
     MOVE_BODY_PRESS,
     MOVE_STEEL_ROLLER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -33743,6 +33772,7 @@ static const u16 sRegiceTeachableLearnset[] = {
     MOVE_POWER_UP_PUNCH,
     MOVE_AURORA_VEIL,
     MOVE_STOMPING_TANTRUM,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -34135,6 +34165,7 @@ static const u16 sKyogreTeachableLearnset[] = {
     MOVE_LIQUIDATION,
     MOVE_TERA_BLAST,
     MOVE_CHILLING_WATER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -35118,6 +35149,7 @@ static const u16 sPiplupTeachableLearnset[] = {
     MOVE_WORK_UP,
     MOVE_CONFIDE,
     MOVE_POWER_TRIP,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -35187,6 +35219,7 @@ static const u16 sPrinplupTeachableLearnset[] = {
     MOVE_WATER_PLEDGE,
     MOVE_WORK_UP,
     MOVE_CONFIDE,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -35273,6 +35306,7 @@ static const u16 sEmpoleonTeachableLearnset[] = {
     MOVE_LASER_FOCUS,
     MOVE_THROAT_CHOP,
     MOVE_LIQUIDATION,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -40319,6 +40353,7 @@ static const u16 sSnoverTeachableLearnset[] = {
     MOVE_SNOWSCAPE,
     MOVE_TRAILBLAZE,
     MOVE_CHILLING_WATER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -40414,6 +40449,7 @@ static const u16 sAbomasnowTeachableLearnset[] = {
     MOVE_SNOWSCAPE,
     MOVE_TRAILBLAZE,
     MOVE_CHILLING_WATER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -40525,6 +40561,7 @@ static const u16 sWeavileTeachableLearnset[] = {
     MOVE_SNOWSCAPE,
     MOVE_TRAILBLAZE,
     MOVE_CHILLING_WATER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -41206,6 +41243,7 @@ static const u16 sTogekissTeachableLearnset[] = {
     MOVE_SMART_STRIKE,
     MOVE_LIFE_DEW,
     MOVE_DUAL_WINGBEAT,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -41448,6 +41486,7 @@ static const u16 sGlaceonTeachableLearnset[] = {
     MOVE_TERA_BLAST,
     MOVE_SNOWSCAPE,
     MOVE_CHILLING_WATER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -41612,6 +41651,7 @@ static const u16 sMamoswineTeachableLearnset[] = {
     MOVE_HIGH_HORSEPOWER,
     MOVE_STOMPING_TANTRUM,
     MOVE_BODY_PRESS,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -41838,6 +41878,7 @@ static const u16 sGalladeTeachableLearnset[] = {
     MOVE_TRIPLE_AXEL,
     MOVE_TERA_BLAST,
     MOVE_AQUA_CUTTER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -42109,6 +42150,7 @@ static const u16 sFroslassTeachableLearnset[] = {
     MOVE_ICE_SPINNER,
     MOVE_SNOWSCAPE,
     MOVE_CHILLING_WATER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -42179,6 +42221,7 @@ static const u16 sRotomTeachableLearnset[] = {
     MOVE_RISING_VOLTAGE,
     MOVE_POLTERGEIST,
     MOVE_TERA_BLAST,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -49967,6 +50010,7 @@ static const u16 sVanilliteTeachableLearnset[] = {
     MOVE_ICICLE_CRASH,
     MOVE_CONFIDE,
     MOVE_AURORA_VEIL,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -50017,6 +50061,7 @@ static const u16 sVanillishTeachableLearnset[] = {
     MOVE_ALLY_SWITCH,
     MOVE_FROST_BREATH,
     MOVE_CONFIDE,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -50073,6 +50118,7 @@ static const u16 sVanilluxeTeachableLearnset[] = {
     MOVE_ICICLE_CRASH,
     MOVE_FREEZE_DRY,
     MOVE_CONFIDE,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -52112,6 +52158,7 @@ static const u16 sCubchooTeachableLearnset[] = {
     MOVE_SNOWSCAPE,
     MOVE_TRAILBLAZE,
     MOVE_CHILLING_WATER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -52212,6 +52259,7 @@ static const u16 sBearticTeachableLearnset[] = {
     MOVE_SNOWSCAPE,
     MOVE_TRAILBLAZE,
     MOVE_CHILLING_WATER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -52282,6 +52330,7 @@ static const u16 sCryogonalTeachableLearnset[] = {
     MOVE_ICE_SPINNER,
     MOVE_SNOWSCAPE,
     MOVE_CHILLING_WATER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -54316,6 +54365,7 @@ static const u16 sTornadusTeachableLearnset[] = {
     MOVE_TERA_BLAST,
     MOVE_SNOWSCAPE,
     MOVE_CHILLING_WATER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -54746,6 +54796,7 @@ static const u16 sKyuremTeachableLearnset[] = {
     MOVE_BREAKING_SWIPE,
     MOVE_SCALE_SHOT,
     MOVE_DUAL_WINGBEAT,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -55013,6 +55064,7 @@ static const u16 sGenesectTeachableLearnset[] = {
     MOVE_CONFIDE,
     MOVE_INFESTATION,
     MOVE_STEEL_BEAM,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
     #endif
@@ -58707,6 +58759,7 @@ static const u16 sAmauraTeachableLearnset[] = {
     MOVE_CONFIDE,
     MOVE_AURORA_VEIL,
     MOVE_METEOR_BEAM,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -58789,6 +58842,7 @@ static const u16 sAurorusTeachableLearnset[] = {
     MOVE_FREEZE_DRY,
     MOVE_CONFIDE,
     MOVE_METEOR_BEAM,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -59794,6 +59848,7 @@ static const u16 sBergmiteTeachableLearnset[] = {
     MOVE_ICE_SPINNER,
     MOVE_SNOWSCAPE,
     MOVE_CHILLING_WATER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -59872,6 +59927,7 @@ static const u16 sAvaluggTeachableLearnset[] = {
     MOVE_ICE_SPINNER,
     MOVE_SNOWSCAPE,
     MOVE_CHILLING_WATER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -60177,6 +60233,7 @@ static const u16 sYveltalTeachableLearnset[] = {
     MOVE_LASER_FOCUS,
     MOVE_LASH_OUT,
     MOVE_DUAL_WINGBEAT,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -61064,6 +61121,7 @@ static const u16 sPopplioTeachableLearnset[] = {
     MOVE_LIFE_DEW,
     MOVE_FLIP_TURN,
     MOVE_TRIPLE_AXEL,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -61127,6 +61185,7 @@ static const u16 sBrionneTeachableLearnset[] = {
     MOVE_BABY_DOLL_EYES,
     MOVE_FLIP_TURN,
     MOVE_TRIPLE_AXEL,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -61207,6 +61266,7 @@ static const u16 sPrimarinaTeachableLearnset[] = {
     MOVE_MISTY_EXPLOSION,
     MOVE_FLIP_TURN,
     MOVE_TRIPLE_AXEL,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -61752,6 +61812,7 @@ static const u16 sCrabrawlerTeachableLearnset[] = {
     MOVE_LIQUIDATION,
     MOVE_TERA_BLAST,
     MOVE_CHILLING_WATER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -61836,6 +61897,7 @@ static const u16 sCrabominableTeachableLearnset[] = {
     MOVE_ICE_SPINNER,
     MOVE_SNOWSCAPE,
     MOVE_CHILLING_WATER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -66102,6 +66164,7 @@ static const u16 sNecrozmaTeachableLearnset[] = {
     MOVE_BREAKING_SWIPE,
     MOVE_EXPANDING_FORCE,
     MOVE_METEOR_BEAM,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -69120,6 +69183,7 @@ static const u16 sHatennaTeachableLearnset[] = {
     MOVE_LIFE_DEW,
     MOVE_EXPANDING_FORCE,
     MOVE_TERA_BLAST,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -69171,6 +69235,7 @@ static const u16 sHattremTeachableLearnset[] = {
     MOVE_LIFE_DEW,
     MOVE_EXPANDING_FORCE,
     MOVE_TERA_BLAST,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -69237,6 +69302,7 @@ static const u16 sHattereneTeachableLearnset[] = {
     MOVE_EXPANDING_FORCE,
     MOVE_MISTY_EXPLOSION,
     MOVE_TERA_BLAST,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -69290,6 +69356,7 @@ static const u16 sImpidimpTeachableLearnset[] = {
     MOVE_TERA_BLAST,
     MOVE_TRAILBLAZE,
     MOVE_CHILLING_WATER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -69346,6 +69413,7 @@ static const u16 sMorgremTeachableLearnset[] = {
     MOVE_TERA_BLAST,
     MOVE_TRAILBLAZE,
     MOVE_CHILLING_WATER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -69424,6 +69492,7 @@ static const u16 sGrimmsnarlTeachableLearnset[] = {
     MOVE_TERA_BLAST,
     MOVE_TRAILBLAZE,
     MOVE_CHILLING_WATER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -69800,6 +69869,7 @@ static const u16 sMrRimeTeachableLearnset[] = {
     MOVE_STOMPING_TANTRUM,
     MOVE_EXPANDING_FORCE,
     MOVE_TRIPLE_AXEL,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -70091,6 +70161,7 @@ static const u16 sSnomTeachableLearnset[] = {
     MOVE_SKITTER_SMACK,
     MOVE_TERA_BLAST,
     MOVE_POUNCE,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -70149,6 +70220,7 @@ static const u16 sFrosmothTeachableLearnset[] = {
     MOVE_ICE_SPINNER,
     MOVE_SNOWSCAPE,
     MOVE_POUNCE,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -70260,6 +70332,7 @@ static const u16 sEiscueTeachableLearnset[] = {
     MOVE_ICE_SPINNER,
     MOVE_SNOWSCAPE,
     MOVE_CHILLING_WATER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -70628,6 +70701,7 @@ static const u16 sArctozoltTeachableLearnset[] = {
     MOVE_BOLT_BEAK,
     MOVE_METEOR_BEAM,
     MOVE_RISING_VOLTAGE,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -70731,6 +70805,7 @@ static const u16 sArctovishTeachableLearnset[] = {
     MOVE_LIQUIDATION,
     MOVE_FISHIOUS_REND,
     MOVE_METEOR_BEAM,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -71506,6 +71581,7 @@ static const u16 sGlastrierTeachableLearnset[] = {
     MOVE_TERA_BLAST,
     MOVE_SNOWSCAPE,
     MOVE_TRAILBLAZE,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -71628,6 +71704,7 @@ static const u16 sCalyrexTeachableLearnset[] = {
     MOVE_LIFE_DEW,
     MOVE_EXPANDING_FORCE,
     MOVE_TERA_BLAST,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -71686,6 +71763,7 @@ static const u16 sWyrdeerTeachableLearnset[] = {
     MOVE_PSYSHIELD_BASH,
     MOVE_TERA_BLAST,
     MOVE_TRAILBLAZE,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -72358,6 +72436,7 @@ static const u16 sSandshrewAlolanTeachableLearnset[] = {
     MOVE_STEEL_BEAM,
     MOVE_STEEL_ROLLER,
     MOVE_TRIPLE_AXEL,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -72449,6 +72528,7 @@ static const u16 sSandslashAlolanTeachableLearnset[] = {
     MOVE_STEEL_BEAM,
     MOVE_STEEL_ROLLER,
     MOVE_TRIPLE_AXEL,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -72525,6 +72605,7 @@ static const u16 sVulpixAlolanTeachableLearnset[] = {
     MOVE_DAZZLING_GLEAM,
     MOVE_BABY_DOLL_EYES,
     MOVE_AURORA_VEIL,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -72607,6 +72688,7 @@ static const u16 sNinetalesAlolanTeachableLearnset[] = {
     MOVE_LASER_FOCUS,
     MOVE_AURORA_VEIL,
     MOVE_TRIPLE_AXEL,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -74178,6 +74260,7 @@ static const u16 sMrMimeGalarianTeachableLearnset[] = {
     MOVE_STOMPING_TANTRUM,
     MOVE_EXPANDING_FORCE,
     MOVE_TRIPLE_AXEL,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -74239,6 +74322,7 @@ static const u16 sArticunoGalarianTeachableLearnset[] = {
     MOVE_FREEZING_GLARE,
     MOVE_TERA_BLAST,
     MOVE_SNOWSCAPE,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -74729,6 +74813,7 @@ static const u16 sDarumakaGalarianTeachableLearnset[] = {
     MOVE_WORK_UP,
     MOVE_FREEZE_DRY,
     MOVE_POWER_UP_PUNCH,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -74799,6 +74884,7 @@ static const u16 sDarmanitanGalarianTeachableLearnset[] = {
     MOVE_BODY_PRESS,
     MOVE_BURNING_JEALOUSY,
     MOVE_LASH_OUT,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
 
@@ -75778,6 +75864,7 @@ static const u16 sAvaluggHisuianTeachableLearnset[] = {
     MOVE_ICE_SPINNER,
     MOVE_SNOWSCAPE,
     MOVE_CHILLING_WATER,
+    MOVE_BITING_FROST,
     MOVE_UNAVAILABLE,
 };
     #endif
