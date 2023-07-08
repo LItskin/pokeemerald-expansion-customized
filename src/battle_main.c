@@ -3190,7 +3190,7 @@ static void BattleStartClearSetData(void)
     gBattleStruct->safariGoNearCounter = 0;
     gBattleStruct->safariPkblThrowCounter = 0;
     //Increase catch odds
-    int catchMul;//multiply rate by 5+ and divide by 5 to get a bonus in 20% increments
+    catchMul;//multiply rate by 5+ and divide by 5 to get a bonus in 20% increments
     if (gSpeciesInfo[GetMonData(&gEnemyParty[0], MON_DATA_SPECIES)].catchRate >= 192)
     {
         catchMul = 5;
