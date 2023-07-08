@@ -169,11 +169,11 @@ DewfordTown_Gym_EventScript_BrawlyDefeated::
 	release
 	end
 
-DewfordTown_Gym_EventScript_GiveZCystal::
+DewfordTown_Gym_EventScript_GiveZCrystal::
 	giveitem ITEM_FIGHTINIUM_Z
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_DEWFORD_Z_CRYSTAL
-	msgbox DewfordTown_Gym_Text_ZCystal, MSGBOX_DEFAULT
+	msgbox DewfordTown_Gym_Text_ZCrystal, MSGBOX_DEFAULT
 	return
 
 DewfordTown_Gym_EventScript_GiveBulkUp::
@@ -445,7 +445,7 @@ DewfordTown_Gym_Text_ExplainBulkUp:
 	.string "It's a move that raises both ATTACK\n"
 	.string "and DEFENSE stats.$"
 
-DewfordTown_Gym_Text_ZCystal:
+DewfordTown_Gym_Text_ZCrystal:
 	.string "This is a Z-CRYSTAL. FIGHTINIUM-Z\p"
 	.string "If you manage to get a Z-RING\n"
 	.string "you could use this to perform the\l"

@@ -85,8 +85,8 @@ LavaridgeTown_Gym_1F_EventScript_FlanneryDefeated::
 	release
 	end
 
-LavaridgeTown_Gym_EventScript_GiveZCystal::
-	msgbox LavaridgeTown_Gym_Text_ZCystal, MSGBOX_DEFAULT
+LavaridgeTown_Gym_EventScript_GiveZCrystal::
+	msgbox LavaridgeTown_Gym_Text_ZCrystal, MSGBOX_DEFAULT
 	giveitem ITEM_FIRIUM_Z
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_LAVARIDGE_Z_CRYSTAL
@@ -384,7 +384,7 @@ LavaridgeTown_Gym_1F_Text_ExplainOverheat:
 	.string "of the POKéMON using it. It might not\l"
 	.string "be suitable for longer battles.$"
 
-LavaridgeTown_Gym_Text_ZCystal:
+LavaridgeTown_Gym_Text_ZCrystal:
 	.string "Oh, right! I'm also supposed to give you\n"
 	.string "this Z-Crystal. You can use it to perform\l"
 	.string "INFERNO OVERDRIVE.$"

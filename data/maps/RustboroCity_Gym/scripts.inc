@@ -6,7 +6,7 @@ RustboroCity_Gym_EventScript_Roxanne::
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, RustboroCity_Gym_EventScript_RoxanneRematch
 	goto_if_unset FLAG_RECEIVED_TM39, RustboroCity_Gym_EventScript_GiveRockTomb
-	goto_if_unset FLAG_RUSTBORO_Z_CRYSTAL, RustboroCity_Gym_EventScript_GiveZCystal
+	goto_if_unset FLAG_RUSTBORO_Z_CRYSTAL, RustboroCity_Gym_EventScript_GiveZCrystal
 	msgbox RustboroCity_Gym_Text_RoxannePostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -24,7 +24,7 @@ RustboroCity_Gym_EventScript_RoxanneDefeated::
 	call Common_EventScript_SetGymTrainers
 	call_if_eq VAR_PETALBURG_GYM_STATE, 6, Common_EventScript_ReadyPetalburgGymForBattle
 	goto_if_unset FLAG_RECEIVED_TM39, RustboroCity_Gym_EventScript_GiveRockTomb
-	goto_if_unset FLAG_RUSTBORO_Z_CRYSTAL, RustboroCity_Gym_EventScript_GiveZCystal
+	goto_if_unset FLAG_RUSTBORO_Z_CRYSTAL, RustboroCity_Gym_EventScript_GiveZCrystal
 	end
 
 RustboroCity_Gym_EventScript_GiveRockTomb::
@@ -34,11 +34,11 @@ RustboroCity_Gym_EventScript_GiveRockTomb::
 	msgbox RustboroCity_Gym_Text_ExplainRockTomb, MSGBOX_DEFAULT
 	return
 
-RustboroCity_Gym_EventScript_GiveZCystal::
+RustboroCity_Gym_EventScript_GiveZrCystal::
 	giveitem ITEM_ROCKIUM_Z
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RUSTBORO_Z_CRYSTAL
-	msgbox RustboroCity_Gym_Text_ZCystal, MSGBOX_DEFAULT
+	msgbox RustboroCity_Gym_Text_ZCrystal, MSGBOX_DEFAULT
 	release
 	end
 
@@ -249,7 +249,7 @@ RustboroCity_Gym_Text_ExplainRockTomb:
 	.string "Remember, a TM can be used any number\n"
 	.string "of times.$"
 
-RustboroCity_Gym_Text_ZCystal:
+RustboroCity_Gym_Text_ZCrystal:
 	.string "Also, take this. It's a Z-CRYSTAL.\p"
 	.string "Specifically it is ROCKIUM-Z.\p"
 	.string "If you manage to aquire a Z-RING\n"

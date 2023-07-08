@@ -117,8 +117,8 @@ SootopolisCity_Gym_1F_EventScript_JuanDefeated::
 	release
 	end
 
-SootopolisCity_Gym_EventScript_GiveZCystal::
-	msgbox SootopolisCity_Gym_Text_ZCystal, MSGBOX_DEFAULT
+SootopolisCity_Gym_EventScript_GiveZCrystal::
+	msgbox SootopolisCity_Gym_Text_ZCrystal, MSGBOX_DEFAULT
 	giveitem ITEM_WATERIUM_Z
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_SOOTOPOLIS_Z_CRYSTAL
@@ -283,7 +283,7 @@ SootopolisCity_Gym_1F_Text_ExplainWaterPulse:
 	.string "the target with ultrasonic waves.\p"
 	.string "… … … … … …$"
 
-SootopolisCity_Gym_Text_ZCystal:
+SootopolisCity_Gym_Text_ZCrystal:
 	.string "One last thing to give you some extra\n"
 	.string "flare: This Z-CRYSTAL.\p"
 	.string "Dazzle your foes with your newfound\n"

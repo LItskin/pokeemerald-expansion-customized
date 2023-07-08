@@ -533,7 +533,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GivePokedex::
 
 LittlerootTown_ProfessorBirchsLab_EventScript_RecieveFalseSwipe::
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_RecieveFalseSwipe
-	giveitem ITEM_TM_51_FALSE_SWIPE
+	giveitem ITEM_TM51_FALSE_SWIPE
 	return
 
 LittlerootTown_ProfessorBirchsLab_EventScript_MayGivePokeBalls::

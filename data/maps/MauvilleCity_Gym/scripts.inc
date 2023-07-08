@@ -113,11 +113,11 @@ MauvilleCity_Gym_EventScript_WattsonDefeated::
 	release
 	end
 
-MauvilleCity_Gym_EventScript_GiveZCystal::
+MauvilleCity_Gym_EventScript_GiveZCrystal::
 	giveitem ITEM_ELECTRIUM_Z
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_MAUVILLE_Z_CRYSTAL
-	msgbox MauvilleCity_Gym_Text_ZCystal, MSGBOX_DEFAULT
+	msgbox MauvilleCity_Gym_Text_ZCrystal, MSGBOX_DEFAULT
 	return
 
 MauvilleCity_Gym_EventScript_GiveShockWave2::
@@ -400,7 +400,7 @@ MauvilleCity_Gym_Text_ExplainShockWave:
 	.string "It's a trustworthy move that never\n"
 	.string "misses! You can count on it!$"
 
-MauvilleCity_Gym_Text_ZCystal:
+MauvilleCity_Gym_Text_ZCrystal:
 	.string "Also take this Z-CRYSTAL. With your\n"
 	.string "Z-RING you can perform the electrifying\l"
 	.string "GIGAVOLT HAVOC!.\p"

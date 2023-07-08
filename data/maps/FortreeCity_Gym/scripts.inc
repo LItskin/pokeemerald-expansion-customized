@@ -49,8 +49,8 @@ FortreeCity_Gym_EventScript_WinonaDefeated::
 	release
 	end
 
-FortreeCity_Gym_EventScript_GiveZCystal::
-	msgbox FortreeCity_Gym_Text_ZCystal, MSGBOX_DEFAULT
+FortreeCity_Gym_EventScript_GiveZCrystal::
+	msgbox FortreeCity_Gym_Text_ZCrystal, MSGBOX_DEFAULT
 	giveitem ITEM_FLYINIUM_Z
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_FORTREE_Z_CRYSTAL
@@ -295,7 +295,7 @@ FortreeCity_Gym_Text_ExplainAerialAce:
 	.string "Its speed…\n"
 	.string "No POKéMON should be able to avoid it.$"
 
-FortreeCity_Gym_Text_ZCystal:
+FortreeCity_Gym_Text_ZCrystal:
 	.string "You also deserve this Z-CRYSTAL.\p"
 	.string "With it and a FLYING-type move you can\l"
 	.string "perform SUPERSONIC SKYSTRIKE.\p"

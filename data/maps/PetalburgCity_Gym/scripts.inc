@@ -406,11 +406,11 @@ PetalburgCity_Gym_EventScript_NormanBattle::
 	case DIR_EAST, PetalburgCity_Gym_EventScript_WallysDadArrivesEast
 	end
 
-PetalburgCity_Gym_EventScript_GiveZCystal::
+PetalburgCity_Gym_EventScript_GiveZCrystal::
 	giveitem ITEM_NORMALIUM_Z
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_PETALBURG_Z_CRYSTAL
-	msgbox PetalburgCity_Gym_Text_ZCystal, MSGBOX_DEFAULT
+	msgbox PetalburgCity_Gym_Text_ZCrystal, MSGBOX_DEFAULT
 	return
 
 PetalburgCity_Gym_EventScript_GiveFacade::
@@ -1317,7 +1317,7 @@ PetalburgCity_Gym_Text_ExplainFacade:
 	.string "It might be able to turn a bad\n"
 	.string "situation into an advantage.$"
 
-PetalburgCity_Gym_Text_ZCystal:
+PetalburgCity_Gym_Text_ZCrystal:
 	.string "This is usually the first Z-CRYSTAL a\n"
 	.string "POKéMON gets on their adventure.\p"
 	.string "Now that you have it you can perform\n"

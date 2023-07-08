@@ -91,8 +91,8 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 	release
 	end
 
-MossdeepCity_Gym_EventScript_GiveZCystal::
-	msgbox MossdeepCity_Gym_Text_ZCystal, MSGBOX_DEFAULT
+MossdeepCity_Gym_EventScript_GiveZCrystal::
+	msgbox MossdeepCity_Gym_Text_ZCrystal, MSGBOX_DEFAULT
 	giveitem ITEM_PSYCHIUM_Z
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_MOSSDEEP_Z_CRYSTAL
@@ -614,7 +614,7 @@ MossdeepCity_Gym_Text_ExplainCalmMind:
 	.string "TATE: It's a move that's perfect…\n"
 	.string "LIZA: For PSYCHIC POKéMON!$"
 
-MossdeepCity_Gym_Text_ZCystal:
+MossdeepCity_Gym_Text_ZCrystal:
 	.string "TATE: Here's one other thing that is…\n"
 	.string "LIZA: Perfect for PSYCHIC POKéMON:\p"
 	.string "TATE: With this Z-CRYSTAL you are able…\n"
