@@ -85,7 +85,7 @@ Route102_EventScript_Master::
 	end
 
 
-Route102_EventScript_MasterDefeated
+Route102_EventScript_MasterDefeated::
 	setflag FLAG_ROUTE_102_MASTER_BEAT
 	msgbox Route102_Text_MasterPostBattle, MSGBOX_DEFAULT
 	msgbox Route102_Text_MasterReward, MSGBOX_DEFAULT
@@ -164,7 +164,7 @@ Route102_Text_MasterRewardFull:
 	.string "Ah, your bag is full…\p"
 	.string "I'll send it to your PC.$"
 
-Route102_Text_MasterBeat
+Route102_Text_MasterBeat::
 	.string "The COVERT CLOAK I gave you prevents\n"
 	.string "secondary effects of moves from affecting\l"
 	.string "the POKéMON that holds it.\p"
