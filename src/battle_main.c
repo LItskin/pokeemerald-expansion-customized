@@ -3190,26 +3190,26 @@ static void BattleStartClearSetData(void)
     gBattleStruct->safariGoNearCounter = 0;
     gBattleStruct->safariPkblThrowCounter = 0;
     //Increase catch odds
-    int catchMul;//multiply rate by 2+ and divide by 2 to get a bonus in 50% increments
+    int catchMul;//multiply rate by 5+ and divide by 5 to get a bonus in 20% increments
     if (gSpeciesInfo[GetMonData(&gEnemyParty[0], MON_DATA_SPECIES)].catchRate >= 192)
     {
-        catchMul = 2;
+        catchMul = 5;
     } else if (gSpeciesInfo[GetMonData(&gEnemyParty[0], MON_DATA_SPECIES)].catchRate >= 128)
     {
-        catchMul = 3;
+        catchMul = 6;
     } else if (gSpeciesInfo[GetMonData(&gEnemyParty[0], MON_DATA_SPECIES)].catchRate >= 64)
     {
-        catchMul = 6;
+        catchMul = 8;
     } else if (gSpeciesInfo[GetMonData(&gEnemyParty[0], MON_DATA_SPECIES)].catchRate >= 32)
     {
-        catchMul = 12;
+        catchMul = 10;
     } else if (gSpeciesInfo[GetMonData(&gEnemyParty[0], MON_DATA_SPECIES)].catchRate >= 8)
     {
-        catchMul = 20;
+        catchMul = 15;
     } else {
-        catchMul = 30;
+        catchMul = 25;
     }
-    gBattleStruct->safariCatchFactor = gSpeciesInfo[GetMonData(&gEnemyParty[0], MON_DATA_SPECIES)].catchRate * 100 / 1275 * catchMul / 2;
+    gBattleStruct->safariCatchFactor = gSpeciesInfo[GetMonData(&gEnemyParty[0], MON_DATA_SPECIES)].catchRate * 100 / 1275 * catchMul / 5;
     gBattleStruct->safariEscapeFactor = 3;
     gBattleStruct->wildVictorySong = 0;
     gBattleStruct->moneyMultiplier = 1;
