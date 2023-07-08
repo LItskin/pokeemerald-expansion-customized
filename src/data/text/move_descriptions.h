@@ -3262,7 +3262,7 @@ static const u8 sHydroSteamDescription[] = _(
 
 static const u8 sBitingFrostDescription[] = _(
     "Inflicts frostbite on the\n"
-    "foe with piercing cold.")
+    "foe with piercing cold.");
 
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
