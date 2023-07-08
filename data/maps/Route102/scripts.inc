@@ -89,7 +89,7 @@ Route102_EventScript_MasterDefeated::
 	setflag FLAG_ROUTE_102_MASTER_BEAT
 	msgbox Route102_Text_MasterPostBattle, MSGBOX_DEFAULT
 	msgbox Route102_Text_MasterReward, MSGBOX_DEFAULT
-	additem ITEM_COVERT_CLOAK
+	giveitem ITEM_COVERT_CLOAK
 	goto_if_eq VAR_RESULT, FALSE, Route102_EventScript_MasterRewardFull
 	release
 	end
@@ -166,8 +166,8 @@ Route102_Text_MasterRewardFull:
 
 Route102_Text_MasterBeat::
 	.string "The COVERT CLOAK I gave you prevents\n"
-	.string "secondary effects of moves from affecting\l"
-	.string "the POKéMON that holds it.\p"
+	.string "secondary effects of moves from\l"
+	.string "affecting POKéMON that holds it.\p"
 	.string "Give it to a POKéMON to stop getting\n"
 	.string "flinched by FAKE OUT, or frozen by\l"
-	.string "ICE BEAM.\p"
+	.string "ICE BEAM.$"

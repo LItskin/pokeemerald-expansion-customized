@@ -15441,6 +15441,23 @@ static void Cmd_handleballthrow(void)
         else
             catchRate = gSpeciesInfo[gBattleMons[gBattlerTarget].species].catchRate;
 
+        if (catchRate <= 8)
+        {
+            catchRate = 32;
+        } else if (catchRate <= 32)
+        {
+            catchRate = 64;
+        } else if (catchRate <= 64)
+        {
+            catchRate = 128;
+        } else if (catchRate <= 128)
+        {
+            catchRate = 192;
+        } else if (catchRate <= 192)
+        {
+            catchRate = 192;
+        }
+
         if (gSpeciesInfo[gBattleMons[gBattlerTarget].species].flags & SPECIES_FLAG_ULTRA_BEAST)
         {
             if (gLastUsedItem == ITEM_BEAST_BALL)
