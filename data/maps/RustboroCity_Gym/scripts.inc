@@ -34,7 +34,7 @@ RustboroCity_Gym_EventScript_GiveRockTomb::
 	msgbox RustboroCity_Gym_Text_ExplainRockTomb, MSGBOX_DEFAULT
 	return
 
-RustboroCity_Gym_EventScript_GiveZrCystal::
+RustboroCity_Gym_EventScript_GiveZCrystal::
 	giveitem ITEM_ROCKIUM_Z
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RUSTBORO_Z_CRYSTAL
