@@ -14156,7 +14156,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         #else
             .accuracy = 75,
         #endif
-        .effect = EFFECT_FROSTBITE_HIT,
+        .effect = EFFECT_FROSTBITE,
         .power = 0,
         .type = TYPE_ICE,
         .pp = 15,
