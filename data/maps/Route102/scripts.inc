@@ -171,4 +171,3 @@ Route102_Text_MasterBeat::
 	.string "Give it to a POKéMON to stop getting\n"
 	.string "flinched by FAKE OUT, or frozen by\l"
 	.string "ICE BEAM.\p"
-	
