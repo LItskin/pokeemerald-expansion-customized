@@ -430,7 +430,7 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectRevivalBlessing         @ EFFECT_REVIVAL_BLESSING
 	.4byte BattleScript_EffectFrostbiteHit            @ EFFECT_FROSTBITE_HIT
 	.4byte BattleScript_EffectSnow                    @ EFFECT_SNOWSCAPE
-	.4byte BattleScript_EffectBitingFrost            @ EFFECT_BITING_FROST
+	.4byte BattleScript_EffectBitingFrost             @ EFFECT_BITING_FROST
 
 BattleScript_EffectRevivalBlessing::
 	attackcanceler
