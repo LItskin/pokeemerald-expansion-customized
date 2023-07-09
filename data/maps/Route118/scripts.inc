@@ -95,6 +95,7 @@ Route118_EventScript_StevenTrigger::
 	waitmovement 0
 	delay 30
 	msgbox Route118_Text_StevenQuestions, MSGBOX_DEFAULT
+	call Route118_EventScript_GiveMegaRing
 	closemessage
 	call_if_eq VAR_0x8008, 0, Route118_EventScript_StevenExit0
 	call_if_eq VAR_0x8008, 1, Route118_EventScript_StevenExit1
@@ -104,10 +105,49 @@ Route118_EventScript_StevenTrigger::
 	releaseall
 	end
 
+Route118_EventScript_GiveMegaRing::
+	msgbox Route118_Text_GiveMegaRing
+	giveitem ITEM_MEGA_RING
+	switch VAR_STARTER_MON
+	case 0, Route118_EventScript_TreeckoMegaStone
+	case 1, Route118_EventScript_TorchicMegaStone
+	case 2, Route118_EventScript_MudkipMegaStone
+	return
+
+Route118_EventScript_TreeckoMegaStone::
+	giveitem ITEM_SCEPTILITE
+	call_if_eq VAR_RESULT, FALSE, Route118_EventScript_TreeckoMegaStoneFull
+	return
+
+Route118_EventScript_TorchicMegaStone::
+	giveitem ITEM_BLAZIKENITE
+	call_if_eq VAR_RESULT, FALSE, Route118_EventScript_TorchicMegaStoneFull
+	return
+
+Route118_EventScript_MudkipMegaStone::
+	giveitem ITEM_SWAMPERTITE
+	call_if_eq VAR_RESULT, FALSE, Route118_EventScript_MudkipMegaStoneFull
+	return
+
 Route118_EventScript_StevenExit0::
 	applymovement OBJ_EVENT_ID_PLAYER, Route118_Movement_PlayerWatchStevenExit
 	applymovement LOCALID_STEVEN, Route118_Movement_StevenExit0
 	waitmovement 0
+	return
+
+Route118_EventScript_TreeckoMegaStoneFull::
+	addpcitem ITEM_SCEPTILITE
+	msgbox Route118_Text_NoSpaceForMegaStone
+	return
+
+Route118_EventScript_TorchicMegaStoneFull::
+	addpcitem ITEM_BLAZIKENITE
+	msgbox Route118_Text_NoSpaceForMegaStone
+	return
+
+Route118_EventScript_MudkipMegaStoneFull::
+	addpcitem ITEM_SWAMPERTITE
+	msgbox Route118_Text_NoSpaceForMegaStone
 	return
 
 Route118_EventScript_StevenExit1::
@@ -261,6 +301,25 @@ Route118_Text_StevenQuestions:
 	.string "Of course, it's not any of my business.\p"
 	.string "It would be nice if we were to meet\n"
 	.string "again somewhere.$"
+
+Route118_Text_GiveMegaRing:
+	.string "Oh, one last thing!\p"
+	.string "A gift for you since you journy to\n"
+	.string "becoming the CHAMPION is going so\l"
+	.string "well.\p"
+	.string "Wear this MEGA RING and when you give\n"
+	.string "certain POKéMON a special item called\l"
+	.string "a MEGA STONE, you can perform a\n"
+	.string "special evolution in battle called\l"
+	.string "MEGA EVOLUTION.\p"
+	.string "You can also have a spare MEGA STONE\n"
+	.string "of mine.$"
+
+Route118_Text_NoSpaceForMegaStone:
+	.string "Ah, you bag seems to be full.\p"
+	.string "I'll just have the MEGA STONE shiped\n"
+	.string "to your PC instead$"
+
 
 Route118_Text_YouAgreeGoodRodIsGood:
 	.string "Hmm!\n"
