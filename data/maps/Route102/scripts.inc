@@ -76,7 +76,8 @@ Route102_EventScript_Allen::
 Route102_EventScript_Master::
 	lock
 	faceplayer
-	goto_if_set FLAG_ROUTE_102_MASTER_BEAT, Route102_EventScript_MasterBeat
+	checktrainerflag ROUTE_MASTER_TERRYN
+	goto_if FLAG_ROUTE_102_MASTER_BEAT, Route102_EventScript_MasterBeat
 	msgbox Route102_Text_MasterYN, MSGBOX_YESNO
 	compare VAR_RESULT, 0
 	goto_if_eq Route102_EventScript_MasterNo
