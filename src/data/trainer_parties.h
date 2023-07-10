@@ -8061,7 +8061,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MaxieMagmaHideout[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_MaxieMtChimney[] = {
+static const struct TrainerMonItemCustomMovesAbilities sParty_MaxieMtChimney[] = {
     {
     .iv = 150,
     .lvl = 24,
