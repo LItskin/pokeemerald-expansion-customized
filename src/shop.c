@@ -379,6 +379,7 @@ static void SetShopMenuCallback(void (* callback)(void))
 static u16 * SetShopAvailableZCrystals(void)
 {
     u16 availableCrystals[36];
+    u16 finalCrystals[36];
     u8 i = 0;
     u8 j = 0;
     u16 flags[35] = {
@@ -465,7 +466,6 @@ static u16 * SetShopAvailableZCrystals(void)
         }
     }
     availableCrystals[i] = ITEM_NONE;
-    u16 finalCrystals[36];
     for (j=0; j<36; j++)
     {
         if (j <= i){
