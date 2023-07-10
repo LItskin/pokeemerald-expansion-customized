@@ -1370,3 +1370,73 @@ RustboroCity_Text_YouCanHave2On2Battle:
 	.string "they'll both challenge you.\p"
 	.string "Don't you think it'd be cool if you\n"
 	.string "could beat two TRAINERS by yourself?$"
+
+RustboroCity_EventScript_ZCrystalMerchant::
+	lock
+	faceplayer
+	goto_if_unset FLAG_RUSTBORO_Z_CRYSTAL, RustboroCity_EventScript_StillSettingUpZCrystal
+	message Rustboro_Text_ZCrystalShop
+	waitmessage
+	pokemart RustboroCity_Mart_ZCrystalMart
+	msgbox RustboroCity_Text_DontBeAStranger, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+RustboroCity_Mart_ZCrystalShop:
+	.2byte ITEM_PIKANIUM_Z
+	checktrainerflag TRAINER_NORMAN_1
+	setvar VAR_0x8008 ITEM_NORMALIUM_Z
+	call_if RustboroCity_Mart_ZCrystal
+	checktrainerflag TRAINER_BRAWLY_1
+	setvar VAR_0x8008 ITEM_FIGHTINIUM_Z
+	call_if RustboroCity_Mart_ZCrystal
+	checktrainerflag TRAINER_WINONA_1
+	setvar VAR_0x8008 ITEM_FLYINIUM_Z
+	call_if RustboroCity_Mart_ZCrystal
+	.2byte ITEM_ROCKIUM_Z
+	setvar VAR_0x8008 ITEM_STEELIUM_Z
+	call_if_set FLAG_DELIVERED_STEVEN_LETTER, RustboroCity_Mart_ZCrystal
+	checktrainerflag TRAINER_FLANNERY_1
+	setvar VAR_0x8008 ITEM_FIRIUM_Z
+	call_if RustboroCity_Mart_ZCrystal
+	checktrainerflag TRAINER_JUAN_1
+	setvar VAR_0x8008 ITEM_WATERIUM_Z
+	call_if RustboroCity_Mart_ZCrystal
+	checktrainerflag TRAINER_WATTSON_1
+	setvar VAR_0x8008 ITEM_ELECTRIUM_Z
+	call_if RustboroCity_Mart_ZCrystal
+	checktrainerflag TRAINER_TATE_AND_LIZA_1
+	setvar VAR_0x8008 ITEM_PSYCHIUM_Z
+	call_if RustboroCity_Mart_ZCrystal
+	.2byte ITEM_NONE
+	release
+	end
+
+	.align 2
+RustboroCity_Mart_ZCrystal:
+	.2byte VAR_0x8008
+	return
+
+RustboroCity_EventScript_StillSettingUpZCrystal::
+	msgbox RustboroCity_Text_StillSettingUpZCrystal
+	release
+	end
+
+RustboroCity_Text_StillSettingUpZCrystal:
+	.string "Hey, buddy. Got a little secret\n"
+	.string "to tell ya.\p"
+	.string "Got da OK to set up a special\n"
+	.string "shop over here.\p"
+	.string "Come back a lil' later and I'll\n"
+	.string "have some special rocks that give\l"
+	.string "ya POKéMON special moves!$"
+
+Rustboro_Text_ZCrystalShop:
+	.string "Hey, buddy. They let me set up shop\n"
+	.string "to sell these special rocks that give\l"
+	.string "ya POKéMON special moves!\p"
+	.string "Why doncha take a gander!$"
+
+RustboroCity_Text_DontBeAStranger:
+	.string "Don't be a stranger!$"
