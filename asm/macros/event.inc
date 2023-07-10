@@ -1101,6 +1101,12 @@
 	.4byte \text
 	.endm
 
+	@ Crystalmart
+	.macro crystalmart
+	.byte 0xe3
+	.4byte \products
+	.endm
+
 	@ Opens the Pokemart system, offering the specified products for sale.
 	@ Products should be a list of .2byte item values preceded by an .align 2
 	.macro pokemart products:req

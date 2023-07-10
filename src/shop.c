@@ -435,7 +435,7 @@ static void SetShopAvailableZCrystals(void)
         ITEM_PSYCHIUM_Z,
         ITEM_ICIUM_Z,
         ITEM_DRAGONIUM_Z,
-        ITEM_DARKIUM_Z,
+        ITEM_DARKINIUM_Z,
         ITEM_FAIRIUM_Z,
         ITEM_PIKANIUM_Z,
         ITEM_PIKASHUNIUM_Z,
@@ -465,8 +465,13 @@ static void SetShopAvailableZCrystals(void)
         }
     }
     availableCrystals[i] = ITEM_NONE;
-    realloc(availableCrystals, i+1);
-    SetShopItemsForSale(availableCrystals);
+    //realloc(availableCrystals, i+1);
+    u16 finalCrystals[i+1];
+    for (j=0; j<i; j++)
+    {
+        finalCrystals[i] = availableCrystals[i];
+    }
+    SetShopItemsForSale(finalCrystals);
 }
 
 static void SetShopItemsForSale(const u16 *items)
