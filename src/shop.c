@@ -380,6 +380,7 @@ static void SetShopAvailableZCrystals(void)
 {
     u16 availableCrystals[36];
     u8 i = 0;
+    u8 j = 0;
     u16 flags[35] = {
         TRAINER_NORMAN_1,
         TRAINER_BRAWLY_1,
@@ -416,7 +417,7 @@ static void SetShopAvailableZCrystals(void)
         FLAG_UNUSED_0x2BB,//Lunala
         FLAG_UNUSED_0x2BB, //Ultra Necrozma
         FLAG_UNUSED_0x2BB //Marshadow
-    }
+    };
     u16 crystals[35] = {
         ITEM_NORMALIUM_Z,
         ITEM_FIGHTINIUM_Z,
@@ -453,9 +454,9 @@ static void SetShopAvailableZCrystals(void)
         ITEM_LUNALIUM_Z,
         ITEM_ULTRANECROZIUM_Z,
         ITEM_MARSHADIUM_Z
-    }
+    };
 
-    for(int j=0; flags[j]!='\0'; j++)
+    for(j; flags[j]!='\0'; j++)
     {
         if (FlagGet(flags[j]))
         {
