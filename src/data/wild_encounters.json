@@ -11491,6 +11491,160 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_SOAKED_FOREST",
+          "base_label": "gSoakedForest",
+          "land_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_BULBASAUR"
+              },
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_CHIKORITA"
+              },
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_TURTWIG"
+              },
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_TURTWIG"
+              },
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_CHESPIN"
+              },
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_CHESPIN"
+              },
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_ROWLET"
+              },
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_GROOKEY"
+              },
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_ROWLET"
+              },
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_GROOKEY"
+              },
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_ROWLET"
+              },
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_GROOKEY"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 15,
+                "max_level": 30,
+                "species": "SPECIES_LOMBRE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 15,
+                "species": "SPECIES_WIMPOD"
+              },
+              {
+                "min_level": 30,
+                "max_level": 40,
+                "species": "SPECIES_LUDICOLO"
+              },
+              {
+                "min_level": 30,
+                "max_level": 40,
+                "species": "SPECIES_GOLISOPOD"
+              },
+              {
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_GOLISOPOD"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 3,
+                "max_level": 7,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 3,
+                "max_level": 7,
+                "species": "SPECIES_WIMPOD"
+              },
+              {
+                "min_level": 8,
+                "max_level": 15,
+                "species": "SPECIES_LOTAD"
+              },
+              {
+                "min_level": 8,
+                "max_level": 15,
+                "species": "SPECIES_WIMPOD"
+              },
+              {
+                "min_level": 16,
+                "max_level": 25,
+                "species": "SPECIES_LOMBRE"
+              },
+              {
+                "min_level": 25,
+                "max_level": 40,
+                "species": "SPECIES_LOMBRE"
+              },
+              {
+                "min_level": 25,
+                "max_level": 40,
+                "species": "SPECIES_FINNEON"
+              },
+              {
+                "min_level": 25,
+                "max_level": 40,
+                "species": "SPECIES_LUDICOLO"
+              },
+              {
+                "min_level": 25,
+                "max_level": 40,
+                "species": "SPECIES_LUMINEON"
+              },
+              {
+                "min_level": 25,
+                "max_level": 40,
+                "species": "SPECIES_LUMINEON"
+              }
+            ]
+          }
         }
       ]
     },

@@ -85,9 +85,7 @@ Route102_EventScript_Master::
 	release
 	end
 
-
 Route102_EventScript_MasterDefeated::
-	setflag FLAG_ROUTE_102_MASTER_BEAT
 	msgbox Route102_Text_MasterPostBattle, MSGBOX_DEFAULT
 	msgbox Route102_Text_MasterReward, MSGBOX_DEFAULT
 	giveitem ITEM_COVERT_CLOAK

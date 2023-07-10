@@ -862,7 +862,10 @@
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
 #define ROUTE_MASTER_TERRYN                 855
-#define TRAINERS_COUNT                      856
+#define TRAINER_GARDENIA_1                  856
+#define TRAINER_GARDENIA_2                  857
+
+#define TRAINERS_COUNT                      858
 #define MAX_TRAINERS_COUNT                  964//Originally 864
 
 #endif  // GUARD_CONSTANTS_OPPONENTS_H

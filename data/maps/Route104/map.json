@@ -529,6 +529,20 @@
       "elevation": 3,
       "dest_map": "MAP_PETALBURG_WOODS",
       "dest_warp_id": "5"
+    },
+    {
+      "x": 0,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_SOAKED_FOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 0,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE104",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [
