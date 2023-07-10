@@ -111,6 +111,7 @@ static EWRAM_DATA struct ListMenuItem *sListMenuItems = NULL;
 static EWRAM_DATA u8 (*sItemNames)[ITEM_NAME_LENGTH + 2] = {0};
 static EWRAM_DATA u8 sPurchaseHistoryId = 0;
 EWRAM_DATA struct ItemSlot gMartPurchaseHistory[SMARTSHOPPER_NUM_ITEMS] = {0};
+EWRAM_DATA u16 purchasableCrystals[36];
 
 static void Task_ShopMenu(u8 taskId);
 static void Task_HandleShopMenuQuit(u8 taskId);
@@ -379,7 +380,6 @@ static void SetShopMenuCallback(void (* callback)(void))
 static u16 * SetShopAvailableZCrystals(void)
 {
     u16 availableCrystals[36];
-    u16 finalCrystals[36];
     u8 i = 0;
     u8 j = 0;
     u16 flags[35] = {
@@ -469,13 +469,13 @@ static u16 * SetShopAvailableZCrystals(void)
     for (j=0; j<36; j++)
     {
         if (j <= i){
-            finalCrystals[i] = availableCrystals[i];
+            purchasableCrystals[i] = availableCrystals[i];
         } else
         {
-            finalCrystals[i] = ITEM_NONE;
+            purchasableCrystals[i] = ITEM_NONE;
         }
     }
-    return finalCrystals;
+    return purchasableCrystals;
 }
 
 static void SetShopItemsForSale(const u16 *items)
