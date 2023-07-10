@@ -465,10 +465,15 @@ static u16 * SetShopAvailableZCrystals(void)
         }
     }
     availableCrystals[i] = ITEM_NONE;
-    u16 finalCrystals[i+1];
-    for (j=0; j<i; j++)
+    u16 finalCrystals[36];
+    for (j=0; j<36; j++)
     {
-        finalCrystals[i] = availableCrystals[i];
+        if (j <= i){
+            finalCrystals[i] = availableCrystals[i];
+        } else
+        {
+            finalCrystals[i] = ITEM_NONE;
+        }
     }
     return finalCrystals;
 }
