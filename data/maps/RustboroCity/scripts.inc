@@ -1387,28 +1387,28 @@ RustboroCity_Mart_ZCrystalShop:
 	.2byte ITEM_PIKANIUM_Z
 	setvar VAR_0x8008 ITEM_NORMALIUM_Z
 	checktrainerflag TRAINER_NORMAN_1
-	call_if RustboroCity_Mart_ZCrystal
+	call_if_eq VAR_RESULT, TRUE, RustboroCity_Mart_ZCrystal
 	setvar VAR_0x8008 ITEM_FIGHTINIUM_Z
 	checktrainerflag TRAINER_BRAWLY_1
-	call_if RustboroCity_Mart_ZCrystal
+	call_if_eq VAR_RESULT, TRUE, RustboroCity_Mart_ZCrystal
 	setvar VAR_0x8008 ITEM_FLYINIUM_Z
 	checktrainerflag TRAINER_WINONA_1
-	call_if RustboroCity_Mart_ZCrystal
+	call_if_eq VAR_RESULT, TRUE, RustboroCity_Mart_ZCrystal
 	.2byte ITEM_ROCKIUM_Z
 	setvar VAR_0x8008 ITEM_STEELIUM_Z
 	call_if_set FLAG_DELIVERED_STEVEN_LETTER, RustboroCity_Mart_ZCrystal
 	setvar VAR_0x8008 ITEM_FIRIUM_Z
 	checktrainerflag TRAINER_FLANNERY_1
-	call_if RustboroCity_Mart_ZCrystal
+	call_if_eq VAR_RESULT, TRUE, RustboroCity_Mart_ZCrystal
 	setvar VAR_0x8008 ITEM_WATERIUM_Z
 	checktrainerflag TRAINER_JUAN_1
-	call_if RustboroCity_Mart_ZCrystal
+	call_if_eq VAR_RESULT, TRUE, RustboroCity_Mart_ZCrystal
 	setvar VAR_0x8008 ITEM_ELECTRIUM_Z
 	checktrainerflag TRAINER_WATTSON_1
-	call_if RustboroCity_Mart_ZCrystal
+	call_if_eq VAR_RESULT, TRUE, RustboroCity_Mart_ZCrystal
 	setvar VAR_0x8008 ITEM_PSYCHIUM_Z
 	checktrainerflag TRAINER_TATE_AND_LIZA_1
-	call_if RustboroCity_Mart_ZCrystal
+	call_if_eq VAR_RESULT, TRUE, RustboroCity_Mart_ZCrystal
 	.2byte ITEM_NONE
 	release
 	end
