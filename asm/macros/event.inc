@@ -1104,7 +1104,6 @@
 	@ Crystalmart
 	.macro crystalmart
 	.byte 0xe3
-	.4byte \products
 	.endm
 
 	@ Opens the Pokemart system, offering the specified products for sale.
