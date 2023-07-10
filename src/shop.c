@@ -471,7 +471,7 @@ static void SetShopAvailableZCrystals(void)
 
     i = 0;
 
-    sMartInfo.itemList = items;
+    sMartInfo.itemList = availableCrystals;
     sMartInfo.itemCount = 0;
 
     // Read items until ITEM_NONE / DECOR_NONE is reached
