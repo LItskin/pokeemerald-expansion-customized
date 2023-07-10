@@ -111,7 +111,6 @@ static EWRAM_DATA struct ListMenuItem *sListMenuItems = NULL;
 static EWRAM_DATA u8 (*sItemNames)[ITEM_NAME_LENGTH + 2] = {0};
 static EWRAM_DATA u8 sPurchaseHistoryId = 0;
 EWRAM_DATA struct ItemSlot gMartPurchaseHistory[SMARTSHOPPER_NUM_ITEMS] = {0};
-EWRAM_DATA u16 purchasableCrystals[36];
 
 static void Task_ShopMenu(u8 taskId);
 static void Task_HandleShopMenuQuit(u8 taskId);
@@ -156,7 +155,7 @@ static void Task_HandleShopMenuBuy(u8 taskId);
 static void Task_HandleShopMenuSell(u8 taskId);
 static void BuyMenuPrintItemDescriptionAndShowItemIcon(s32 item, bool8 onInit, struct ListMenu *list);
 static void BuyMenuPrintPriceInList(u8 windowId, u32 itemId, u8 y);
-static u16 * SetShopAvailableZCrystals(void);
+static void SetShopAvailableZCrystals(void);
 
 static const struct YesNoFuncTable sShopPurchaseYesNoFuncs =
 {
@@ -377,7 +376,7 @@ static void SetShopMenuCallback(void (* callback)(void))
     sMartInfo.callback = callback;
 }
 
-static u16 * SetShopAvailableZCrystals(void)
+static void SetShopAvailableZCrystals(void)
 {
     u16 availableCrystals[36];
     u8 i = 0;
@@ -465,17 +464,22 @@ static u16 * SetShopAvailableZCrystals(void)
             i++;
         }
     }
-    availableCrystals[i] = ITEM_NONE;
-    for (j=0; j<36; j++)
+    for(i; i<36; i++)
     {
-        if (j <= i){
-            purchasableCrystals[i] = availableCrystals[i];
-        } else
-        {
-            purchasableCrystals[i] = ITEM_NONE;
-        }
+        availableCrystals[i] = ITEM_NONE;
     }
-    return purchasableCrystals;
+
+    i = 0;
+
+    sMartInfo.itemList = items;
+    sMartInfo.itemCount = 0;
+
+    // Read items until ITEM_NONE / DECOR_NONE is reached
+    while (sMartInfo.itemList[i])
+    {
+        sMartInfo.itemCount++;
+        i++;
+    }
 }
 
 static void SetShopItemsForSale(const u16 *items)
@@ -1388,7 +1392,7 @@ void CreateDecorationShop2Menu(const u16 *itemsForSale)
 void CreateCrystalMartMenu(void)
 {
     CreateShopMenu(MART_TYPE_NORMAL);
-    SetShopItemsForSale(SetShopAvailableZCrystals());
+    SetShopAvailableZCrystals();
     ClearItemPurchases();
     SetShopMenuCallback(ScriptContext_Enable);
 }
