@@ -1377,7 +1377,7 @@ RustboroCity_EventScript_ZCrystalMerchant::
 	goto_if_unset FLAG_RUSTBORO_Z_CRYSTAL, RustboroCity_EventScript_StillSettingUpZCrystal
 	message Rustboro_Text_ZCrystalShop
 	waitmessage
-	pokemart RustboroCity_Mart_ZCrystalMart
+	pokemart RustboroCity_Mart_ZCrystalShop
 	msgbox RustboroCity_Text_DontBeAStranger, MSGBOX_DEFAULT
 	release
 	end
