@@ -155,7 +155,7 @@ static void Task_HandleShopMenuBuy(u8 taskId);
 static void Task_HandleShopMenuSell(u8 taskId);
 static void BuyMenuPrintItemDescriptionAndShowItemIcon(s32 item, bool8 onInit, struct ListMenu *list);
 static void BuyMenuPrintPriceInList(u8 windowId, u32 itemId, u8 y);
-static void SetShopAvailableZCrystals(void);
+static u16 * SetShopAvailableZCrystals(void);
 
 static const struct YesNoFuncTable sShopPurchaseYesNoFuncs =
 {
@@ -376,7 +376,7 @@ static void SetShopMenuCallback(void (* callback)(void))
     sMartInfo.callback = callback;
 }
 
-static void SetShopAvailableZCrystals(void)
+static u16 * SetShopAvailableZCrystals(void)
 {
     u16 availableCrystals[36];
     u8 i = 0;
@@ -465,13 +465,12 @@ static void SetShopAvailableZCrystals(void)
         }
     }
     availableCrystals[i] = ITEM_NONE;
-    //realloc(availableCrystals, i+1);
     u16 finalCrystals[i+1];
     for (j=0; j<i; j++)
     {
         finalCrystals[i] = availableCrystals[i];
     }
-    SetShopItemsForSale(finalCrystals);
+    return finalCrystals;
 }
 
 static void SetShopItemsForSale(const u16 *items)
@@ -1384,7 +1383,7 @@ void CreateDecorationShop2Menu(const u16 *itemsForSale)
 void CreateCrystalMartMenu(void)
 {
     CreateShopMenu(MART_TYPE_NORMAL);
-    SetShopAvailableZCrystals();
+    SetShopItemsForSale(SetShopAvailableZCrystals());
     ClearItemPurchases();
     SetShopMenuCallback(ScriptContext_Enable);
 }
