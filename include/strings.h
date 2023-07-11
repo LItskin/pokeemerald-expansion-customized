@@ -3034,4 +3034,7 @@ extern const u8 gText_BoxName[];
 extern const u8 gText_PkmnsNickname[];
 extern const u8 gText_TellHimTheWords[];
 
+// Custom Strings
+extern const u8 gText_SoakedForest[];
+
 #endif // GUARD_STRINGS_H

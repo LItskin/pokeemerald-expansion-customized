@@ -74,7 +74,7 @@ SoakedForest_Text_GardeniaReturn:
 
 SoakedForest_EventScript_GardeniaRefight::
 	call_if_unset FLAG_GRASS_Z_CRYSTAL, SoakedForest_EventScript_Gardenia1Defeated
-	goto_if_unset FLAG_IS_CHAMPION, SoakedForest_EventScript_Gardenia_ComeBackLater
+	goto_if_unset FLAG_DELIVERED_STEVEN_LETTER, SoakedForest_EventScript_Gardenia_ComeBackLater
 	checktrainerflag TRAINER_GARDENIA_2
 	goto_if_eq VAR_RESULT, TRUE, SoakedForest_EventScript_Gardenia2Defeated
 	msgbox SoakedForest_Text_Gardenia_Fight2YN, MSGBOX_YESNO
