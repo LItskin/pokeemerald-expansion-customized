@@ -385,38 +385,38 @@ static void SetShopAvailableZCrystals(void)
         TRAINER_FLAGS_START + TRAINER_NORMAN_1,               //Normal
         TRAINER_FLAGS_START + TRAINER_BRAWLY_1,               //Fighting
         TRAINER_FLAGS_START + TRAINER_WINONA_1,               //Flying
-        FLAG_UNUSED_0x2BB,              //Poison
-        FLAG_UNUSED_0x2BB,              //Ground
+        FLAG_UNUSED_0x282,              //Poison
+        FLAG_UNUSED_0x282,              //Ground
         TRAINER_FLAGS_START + TRAINER_ROXANNE_1,              //Rock
-        FLAG_UNUSED_0x2BB,              //Bug
-        FLAG_UNUSED_0x2BB,              //Ghost
+        FLAG_UNUSED_0x282,              //Bug
+        FLAG_UNUSED_0x282,              //Ghost
         FLAG_DELIVERED_STEVEN_LETTER,   //Steel
         TRAINER_FLAGS_START + TRAINER_FLANNERY_1,             //Fire
         TRAINER_FLAGS_START + TRAINER_JUAN_1,                 //Water
-        FLAG_UNUSED_0x2BB,              //Grass
+        FLAG_UNUSED_0x282,              //Grass
         TRAINER_FLAGS_START + TRAINER_WATTSON_1,              //Electric
         TRAINER_FLAGS_START + TRAINER_TATE_AND_LIZA_1,        //Psychic
-        FLAG_UNUSED_0x2BB,              //Ice
-        FLAG_UNUSED_0x2BB,              //Dragon
-        FLAG_UNUSED_0x2BB,              //Dark
-        FLAG_UNUSED_0x2BB,              //Fairy
-        FLAG_UNUSED_0x2BB,              //Pikachu
-        FLAG_UNUSED_0x2BB,              //Ash Pikachu
-        FLAG_UNUSED_0x2BB,              //Alolan Riachu
-        FLAG_UNUSED_0x2BB,              //Eevee
-        FLAG_UNUSED_0x2BB,              //Snorlax
-        FLAG_UNUSED_0x2BB,              //Mew
-        FLAG_UNUSED_0x2BB,              //Decidueye
-        FLAG_UNUSED_0x2BB,              //Incineroar
-        FLAG_UNUSED_0x2BB,              //Primarina
-        FLAG_UNUSED_0x2BB,              //Lycanrock
-        FLAG_UNUSED_0x2BB,              //Mimikyu
-        FLAG_UNUSED_0x2BB,              //Kommo-o
-        FLAG_UNUSED_0x2BB,              //Tapu's
-        FLAG_UNUSED_0x2BB,              //Solgaleo
-        FLAG_UNUSED_0x2BB,              //Lunala
-        FLAG_UNUSED_0x2BB,              //Ultra Necrozma
-        FLAG_UNUSED_0x2BB               //Marshadow
+        FLAG_UNUSED_0x282,              //Ice
+        FLAG_UNUSED_0x282,              //Dragon
+        FLAG_UNUSED_0x282,              //Dark
+        FLAG_UNUSED_0x282,              //Fairy
+        FLAG_UNUSED_0x282,              //Pikachu
+        FLAG_UNUSED_0x282,              //Ash Pikachu
+        FLAG_UNUSED_0x282,              //Alolan Riachu
+        FLAG_UNUSED_0x282,              //Eevee
+        FLAG_UNUSED_0x282,              //Snorlax
+        FLAG_UNUSED_0x282,              //Mew
+        FLAG_UNUSED_0x282,              //Decidueye
+        FLAG_UNUSED_0x282,              //Incineroar
+        FLAG_UNUSED_0x282,              //Primarina
+        FLAG_UNUSED_0x282,              //Lycanrock
+        FLAG_UNUSED_0x282,              //Mimikyu
+        FLAG_UNUSED_0x282,              //Kommo-o
+        FLAG_UNUSED_0x282,              //Tapu's
+        FLAG_UNUSED_0x282,              //Solgaleo
+        FLAG_UNUSED_0x282,              //Lunala
+        FLAG_UNUSED_0x282,              //Ultra Necrozma
+        FLAG_UNUSED_0x282               //Marshadow
     };
     u16 crystals[35] = {
         ITEM_NORMALIUM_Z,   //Normal
