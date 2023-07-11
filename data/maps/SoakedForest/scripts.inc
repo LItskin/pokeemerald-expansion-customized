@@ -56,7 +56,7 @@ SoakedForest_Text_GardeniaIllBeHere:
 SoakedForest_EventScript_Gardenia1Defeated::
 	msgbox SoakedForest_Text_Gardenia1Reward, MSGBOX_DEFAULT
 	giveitem ITEM_GRASSIUM_Z
-	goto_if_eq, VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_GRASS_Z_CRYSTAL
 	msgbox SoakedForest_Text_GardeniaReturn, MSGBOX_DEFAULT
 	return
