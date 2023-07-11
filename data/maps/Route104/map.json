@@ -27,6 +27,11 @@
       "map": "MAP_PETALBURG_CITY",
       "offset": 50,
       "direction": "right"
+    },
+    {
+      "map": "MAP_SOAKED_FOREST",
+      "offset": 11,
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -555,20 +560,6 @@
       "elevation": 3,
       "dest_map": "MAP_PETALBURG_WOODS",
       "dest_warp_id": "5"
-    },
-    {
-      "x": 0,
-      "y": 18,
-      "elevation": 0,
-      "dest_map": "MAP_SOAKED_FOREST",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 0,
-      "y": 19,
-      "elevation": 0,
-      "dest_map": "MAP_SOAKED_FOREST",
-      "dest_warp_id": "1"
     }
   ],
   "coord_events": [
