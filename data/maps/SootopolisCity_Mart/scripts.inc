@@ -22,6 +22,8 @@ SootopolisCity_Mart_Pokemart:
 	.2byte ITEM_X_ATTACK
 	.2byte ITEM_X_DEFENSE
 	.2byte ITEM_SHADOW_MAIL
+	.2byte ITEM_TM56_CHILLING_WATER
+	.2byte ITEM_TM67_HEX
 	.2byte ITEM_NONE
 	release
 	end

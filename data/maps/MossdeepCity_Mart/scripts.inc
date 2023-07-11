@@ -22,6 +22,8 @@ MossdeepCity_Mart_Pokemart:
 	.2byte ITEM_MAX_REPEL
 	.2byte ITEM_X_ATTACK
 	.2byte ITEM_X_DEFENSE
+	.2byte ITEM_TM62_PSYCHIC_TERRAIN
+	.2byte ITEM_TM64_TRIPLE_AXEL
 	.2byte ITEM_NONE
 	release
 	end

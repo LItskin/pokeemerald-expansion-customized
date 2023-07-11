@@ -25,6 +25,8 @@ MauvilleCity_Mart_Pokemart:
 	.2byte ITEM_GUARD_SPEC
 	.2byte ITEM_DIRE_HIT
 	.2byte ITEM_X_ACCURACY
+	.2byte ITEM_TM60_ELECTRIC_TERRAIN
+	.2byte ITEM_TM69_FLASH_CANNON
 	.2byte ITEM_NONE
 	release
 	end

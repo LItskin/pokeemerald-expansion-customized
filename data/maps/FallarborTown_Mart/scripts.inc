@@ -25,6 +25,8 @@ FallarborTown_Mart_Pokemart:
 	.2byte ITEM_X_DEFENSE
 	.2byte ITEM_DIRE_HIT
 	.2byte ITEM_GUARD_SPEC
+	.2byte ITEM_TM61_SPIKES
+	.2byte ITEM_TM70_DAZZLING_GLEAM
 	.2byte ITEM_NONE
 	release
 	end
