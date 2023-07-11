@@ -5,7 +5,6 @@ SoakedForest_MapScripts::
 	.byte 0
 
 SoakedForest_OnTransition:
-	setweather WEATHER_RAIN
 	call_if_set FLAG_GARDENIA_MOVED, SoakedForset_EventScript_MoveGardenia
 	end
 
