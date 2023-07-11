@@ -734,8 +734,8 @@
 #define FLAG_UNUSED_0x2B4  0x2B4 // Unused Flag
 #define FLAG_UNUSED_0x2B5  0x2B5 // Unused Flag
 #define FLAG_UNUSED_0x2B6  0x2B6 // Unused Flag
-#define FLAG_UNUSED_0x2B7  0x2B7 // Unused Flag
-#define FLAG_UNUSED_0x2B8  0x2B8 // Unused Flag
+#define FLAG_SOAKED_FOREST_ITEM_GRASS_GEM  0x2B7 // Unused Flag
+#define FLAG_SOAKED_FOREST_ITEM_GRASSY_SEED  0x2B8 // Unused Flag
 #define FLAG_SOAKED_FOREST_HIDDEN_DAMP_ROCK  0x2B9 // Unused Flag
 #define FLAG_SOAKED_FOREST_HIDDEN_BIG_ROOT  0x2BA // Unused Flag
 #define FLAG_SOAKED_FOREST_HIDDEN_MENTAL_HERB  0x2BB // Unused Flag

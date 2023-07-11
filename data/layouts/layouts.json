@@ -4414,10 +4414,10 @@
     {
       "id": "LAYOUT_SOAKED_FOREST",
       "name": "SoakedForest_Layout",
-      "width": 40,
+      "width": 46,
       "height": 40,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/SoakedForest/border.bin",
       "blockdata_filepath": "data/layouts/SoakedForest/map.bin"
     }
