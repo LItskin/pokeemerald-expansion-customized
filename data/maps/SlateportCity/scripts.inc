@@ -1383,3 +1383,50 @@ SlateportCity_Text_TakingBattleTentChallenge:
 	.string "After all, a tough TRAINER is\n"
 	.string "the perfect fit for the BATTLE TENT!\p"
 	.string "Give it your best effort!$"
+
+SlateportCity_EventScript_MintMerchant::
+	lock
+	faceplayer
+	message SlateportCity_Text_MintMerchant
+	waitmessage
+	pokemart SlateportCity_Mart_MintMerchant
+	msgbox SlateportCity_Text_MintMerchantEnd, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+SlateportCity_Mart_MintMerchant:
+	.2byte ITEM_LONELY_MINT
+	.2byte ITEM_ADAMANT_MINT
+	.2byte ITEM_NAUGHTY_MINT
+	.2byte ITEM_BRAVE_MINT
+	.2byte ITEM_BOLD_MINT
+	.2byte ITEM_IMPISH_MINT
+	.2byte ITEM_LAX_MINT
+	.2byte ITEM_RELAXED_MINT
+	.2byte ITEM_MODEST_MINT
+	.2byte ITEM_MILD_MINT
+	.2byte ITEM_RASH_MINT
+	.2byte ITEM_QUIET_MINT
+	.2byte ITEM_CALM_MINT
+	.2byte ITEM_GENTLE_MINT
+	.2byte ITEM_CAREFUL_MINT
+	.2byte ITEM_SASSY_MINT
+	.2byte ITEM_TIMID_MINT
+	.2byte ITEM_HASTY_MINT
+	.2byte ITEM_JOLLY_MINT
+	.2byte ITEM_NAIVE_MINT
+	.2byte ITEM_SERIOUS_MINT
+	.2byte ITEM_NONE
+
+SlateportCity_Text_MintMerchant:
+	.string "Slateport gets all sorts of items from\n"
+	.string "all over the world. For instance: these\l"
+	.string "special MINTS that can change a POKéMON's\l"
+	.string "nature.\p"
+	.string "I can sell them to you at a good price,\n"
+	.string "you interested?$"
+
+SlateportCity_Text_MintMerchantEnd:
+	.string "If you ever have a POKéMON with a nature\n"
+	.string "you want to change, remeber that I'm here.$"
