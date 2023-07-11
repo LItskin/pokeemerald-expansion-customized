@@ -138,5 +138,5 @@ SoakedForest_Text_GardeniaFinal:
 	.string "GRASS-type pokemon to be also GHOST-type.$"
 
 SoakedForset_EventScript_MoveGardenia:
-	setobjectxyperm LOCAL_GARDENIA, 26, 4
+	setobjectxyperm LOCALID_GARDENIA, 26, 4
 	return
