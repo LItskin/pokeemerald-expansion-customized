@@ -58,7 +58,8 @@ SoakedForest_EventScript_Gardenia1Defeated::
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_GRASS_Z_CRYSTAL
 	msgbox SoakedForest_Text_GardeniaReturn, MSGBOX_DEFAULT
-	return
+	release
+	end
 
 SoakedForest_Text_Gardenia1Reward:
 	.string "Here is a reward for such a great battle:\n"
