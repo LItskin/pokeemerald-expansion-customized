@@ -5031,8 +5031,6 @@ u32 GetBoxMonData(struct BoxPokemon *boxMon, s32 field, u8 *data)
                 | (substruct3->worldRibbon << 26);
         }
         break;
-    case MON_DATA_HIDDEN_NATURE:
-        retVal = substruct0->hiddenNature;
     default:
         break;
     }
