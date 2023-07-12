@@ -1417,6 +1417,8 @@ SlateportCity_Mart_MintMerchant:
 	.2byte ITEM_JOLLY_MINT
 	.2byte ITEM_NAIVE_MINT
 	.2byte ITEM_SERIOUS_MINT
+	.2byte ITEM_ABILITY_CAPSULE
+	.2byte ITEM_ABILITY_PATCH
 	.2byte ITEM_NONE
 
 SlateportCity_Text_MintMerchant:

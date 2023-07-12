@@ -1023,7 +1023,7 @@ const struct Item gItems[] =
     {
         .name = _("AbilityCapsle"),
         .itemId = ITEM_ABILITY_CAPSULE,
-        .price = 10000,
+        .price = 5000,
         .holdEffectParam = 0,
         .description = sAbilityCapsuleDesc,
         .pocket = POCKET_ITEMS,
@@ -1035,7 +1035,7 @@ const struct Item gItems[] =
     {
         .name = _("AbilityPatch"),
         .itemId = ITEM_ABILITY_PATCH,
-        .price = 0,
+        .price = 5000,
         .holdEffectParam = 0,
         .description = sAbilityPatchDesc,
         .pocket = POCKET_ITEMS,
