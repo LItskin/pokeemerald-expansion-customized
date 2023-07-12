@@ -3616,13 +3616,8 @@ static void PrintLeftColumnStats(void)
 
 static void BufferRightColumnStats(void)
 {
-    if (sMonSummaryScreen->summary.nature == 26)//HIDDEN_NATURE_NONE
-    {
-        const s8 *natureMod = gNatureStatTable[sMonSummaryScreen->summary.nature];
-    }else
-    {
-        const s8 *natureMod = gNatureStatTable[sMonSummaryScreen->summary.hiddenNature];
-    }
+    const s8 *natureMod = gNatureStatTable[
+      (sMonSummaryScreen->summary.hiddenNature == HIDDEN_NATURE_NONE) ? sMonSummaryScreen->summary.nature : sMonSummaryScreen->summary.hiddenNature];
 
     DynamicPlaceholderTextUtil_Reset();
     BufferStat(gStringVar1, natureMod[STAT_SPATK - 1], sMonSummaryScreen->summary.spatk, 0, 3);
