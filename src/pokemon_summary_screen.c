@@ -3510,13 +3510,9 @@ static void BufferIvOrEvStats(u8 mode)
 {
     u16 hp, hp2, atk, def, spA, spD, spe;
     u8 *currHPString = Alloc(20);
-    if (sMonSummaryScreen->summary.nature == 26)//HIDDEN_NATURE_NONE
-    {
-        const s8 *natureMod = gNatureStatTable[sMonSummaryScreen->summary.nature];
-    }else
-    {
-        const s8 *natureMod = gNatureStatTable[sMonSummaryScreen->summary.hiddenNature];
-    }
+    
+    const s8 *natureMod = gNatureStatTable[
+      (sMonSummaryScreen->summary.hiddenNature == HIDDEN_NATURE_NONE) ? sMonSummaryScreen->summary.nature : sMonSummaryScreen->summary.hiddenNature];
 
     switch (mode)
     {
@@ -3597,13 +3593,8 @@ static void BufferLeftColumnStats(void)
     u8 *attackString = Alloc(20);
     u8 *defenseString = Alloc(20);
 
-    if (sMonSummaryScreen->summary.nature == 26)//HIDDEN_NATURE_NONE
-    {
-        const s8 *natureMod = gNatureStatTable[sMonSummaryScreen->summary.nature];
-    }else
-    {
-        const s8 *natureMod = gNatureStatTable[sMonSummaryScreen->summary.hiddenNature];
-    }
+    const s8 *natureMod = gNatureStatTable[
+      (sMonSummaryScreen->summary.hiddenNature == HIDDEN_NATURE_NONE) ? sMonSummaryScreen->summary.nature : sMonSummaryScreen->summary.hiddenNature];
 
     DynamicPlaceholderTextUtil_Reset();
     BufferStat(currentHPString, 0, sMonSummaryScreen->summary.currentHP, 0, 3);
