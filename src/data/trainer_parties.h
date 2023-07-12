@@ -12749,7 +12749,7 @@ static const struct TrainerMonItemCustomMovesAbilities sParty_Gardenia2[] = {
     {
     .iv = 25,
     .lvl = 10,
-    .species = SPECIES_LILIGANT_HISUIAN,
+    .species = SPECIES_LILLIGANT_HISUIAN,
     .heldItem = ITEM_ZOOM_LENS,
     .moves = {MOVE_AXE_KICK, MOVE_LEAF_BLADE, MOVE_MEGA_KICK, MOVE_VICTORY_DANCE},
     .ability = 1,
