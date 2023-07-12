@@ -1325,7 +1325,6 @@ void ItemUseOutOfBattle_CannotUse(u8 taskId)
 
 void ItemUseOutOfBattle_Mints(u8 taskId)
 {
-    PlaySE(SE_FALL);
     gItemUseCB = ItemUseCB_Mints;
     SetUpItemUseCallback(taskId);
 }
