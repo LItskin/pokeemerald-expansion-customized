@@ -100,6 +100,7 @@ enum {
     MON_DATA_SPEED2,
     MON_DATA_SPATK2,
     MON_DATA_SPDEF2,
+    MON_DATA_HIDDEN_NATURE,
 };
 
 struct PokemonSubstruct0
@@ -109,6 +110,7 @@ struct PokemonSubstruct0
     /*0x04*/ u32 experience;
     /*0x08*/ u8 ppBonuses;
     /*0x09*/ u8 friendship;
+             u8 hiddenNature:5;
     /*0x0A*/ u16 pokeball:5; //31 balls
              u16 filler:11;
 }; /* size = 12 */
