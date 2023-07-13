@@ -4420,6 +4420,16 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/SoakedForest/border.bin",
       "blockdata_filepath": "data/layouts/SoakedForest/map.bin"
+    },
+    {
+      "id": "LAYOUT_ANCIENT_ENIGMA",
+      "name": "AncientEnigma_Layout",
+      "width": 17,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AncientEnigma/border.bin",
+      "blockdata_filepath": "data/layouts/AncientEnigma/map.bin"
     }
   ]
 }

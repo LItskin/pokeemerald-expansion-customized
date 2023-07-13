@@ -430,7 +430,8 @@
     "TerraCave_End",
     "AlteringCave",
     "MeteorFalls_StevensCave",
-    "SoakedForest"
+    "SoakedForest",
+    "AncientEnigma"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
