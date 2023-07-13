@@ -7049,8 +7049,6 @@ static void Task_Mints(u8 taskId)
     static const u8 sText_AskMint[] = _("Would you like to change {STR_VAR_1}'s\nnature to {STR_VAR_2}?");
     static const u8 sText_MintDone[] = _("{STR_VAR_1}'s nature became\n{STR_VAR_2}!{PAUSE_UNTIL_PRESS}");
     s16 *data = gTasks[taskId].data;
-
-    PlaySE(SE_FALL);
     
     switch (tState)
     {
