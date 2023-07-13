@@ -3392,8 +3392,8 @@ static const u8 sTM73Desc[] = _(
 
 static const u8 sTM74Desc[] = _(
     "Type and power\n"
-    "changes depending on\n"
-    "the terrain.");
+    "changes depending\n"
+    "on the terrain.");
 
 static const u8 sTM75Desc[] = _( // Todo
     "?????");
