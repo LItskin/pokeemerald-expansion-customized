@@ -96,6 +96,8 @@ SlateportCity_EventScript_ScottScene::
 	closemessage
 	delay 30
 	setflag FLAG_ENABLE_SCOTT_MATCH_CALL
+	msgbox SlateportCity_Text_GiveHiddenPower, MSGBOX_DEFAULT
+	giveitem ITEM_TM10_HIDDEN_POWER
 	msgbox SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_SCOTT, SlateportCity_Movement_ScottExit
@@ -1365,6 +1367,14 @@ SlateportCity_Text_RegisteredScott:
 	.string "Registered this SCOTT person\n"
 	.string "in the POKéNAV.$"
 
+SlateportCity_Text_GiveHiddenPower:
+	.string "SCOTT: I think you should try using\n"
+	.string "this TM.\p"
+	.string "Its type changes from POKéMON to\n"
+	.string "POKéMON, so it can be pretty hard\l"
+	.string "to use, but I think you can handle\l"
+	.string "it.$"
+
 SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou:
 	.string "SCOTT: What I'd like to do is tag along\n"
 	.string "with you, but I do want to keep an eye\l"
@@ -1417,8 +1427,6 @@ SlateportCity_Mart_MintMerchant:
 	.2byte ITEM_JOLLY_MINT
 	.2byte ITEM_NAIVE_MINT
 	.2byte ITEM_SERIOUS_MINT
-	.2byte ITEM_ABILITY_CAPSULE
-	.2byte ITEM_ABILITY_PATCH
 	.2byte ITEM_NONE
 
 SlateportCity_Text_MintMerchant:
