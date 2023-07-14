@@ -154,62 +154,6 @@ Route117_EventScript_ItemRevive::
 	finditem ITEM_REVIVE
 	end
 
-Route118_EventScript_ItemHyperPotion::
-	finditem ITEM_HYPER_POTION
-	end
-
-Route119_EventScript_ItemSuperRepel::
-	finditem ITEM_SUPER_REPEL
-	end
-
-Route119_EventScript_ItemZinc::
-	finditem ITEM_ZINC
-	end
-
-Route119_EventScript_ItemElixir::
-	finditem ITEM_ELIXIR
-	end
-
-Route119_EventScript_ItemLeafStone::
-	finditem ITEM_LEAF_STONE
-	end
-
-Route119_EventScript_ItemRareCandy::
-	finditem ITEM_RARE_CANDY
-	end
-
-Route119_EventScript_ItemHyperPotion::
-	finditem ITEM_HYPER_POTION
-	end
-
-Route119_EventScript_ItemHyperPotion2::
-	finditem ITEM_HYPER_POTION
-	end
-
-Route119_EventScript_ItemElixir2::
-	finditem ITEM_ELIXIR
-	end
-
-Route120_EventScript_ItemNugget::
-	finditem ITEM_NUGGET
-	end
-
-Route120_EventScript_ItemFullHeal::
-	finditem ITEM_FULL_HEAL
-	end
-
-Route120_EventScript_ItemHyperPotion::
-	finditem ITEM_HYPER_POTION
-	end
-
-Route120_EventScript_ItemNestBall::
-	finditem ITEM_NEST_BALL
-	end
-
-Route120_EventScript_ItemRevive::
-	finditem ITEM_REVIVE
-	end
-
 Route121_EventScript_ItemCarbos::
 	finditem ITEM_CARBOS
 	end
@@ -440,18 +384,6 @@ AquaHideout_B2F_EventScript_ItemNestBall::
 
 AquaHideout_B2F_EventScript_ItemMasterBall::
 	finditem ITEM_MASTER_BALL      // Unused
-	end
-
-Route119_EventScript_ItemNugget::
-	finditem ITEM_NUGGET
-	end
-
-Route119_EventScript_ItemMaxElixir::
-	finditem ITEM_MAX_ELIXIR
-	end
-
-Route119_EventScript_ItemNestBall::
-	finditem ITEM_NEST_BALL
 	end
 
 ShoalCave_LowTideEntranceRoom_EventScript_ItemBigPearl::
