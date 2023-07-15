@@ -3395,17 +3395,25 @@ static const u8 sTM74Desc[] = _(
     "changes depending\n"
     "on the terrain.");
 
-static const u8 sTM75Desc[] = _( // Todo
-    "?????");
+static const u8 sTM75Desc[] = _(
+    "User attacks with a\n"
+    "psychic blade. High\n"
+    "critical-hit ratio.");
 
-static const u8 sTM76Desc[] = _( // Todo
-    "?????");
+static const u8 sTM76Desc[] = _(
+    "The faster the user is\n"
+    "thant the target, the\n"
+    "greater the damage.");
 
-static const u8 sTM77Desc[] = _( // Todo
-    "?????");
+static const u8 sTM77Desc[] = _(
+    "User blows a cold\n"
+    "breath on the target.\n"
+    "Always criticaly hits.");
 
-static const u8 sTM78Desc[] = _( // Todo
-    "?????");
+static const u8 sTM78Desc[] = _(
+    "Creates a decoy using\n"
+    "1/4 of the user's\n"
+    "maximum HP.");
 
 static const u8 sTM79Desc[] = _( // Todo
     "?????");

@@ -247,8 +247,8 @@ MauvilleCity_GameCorner_EventScript_ChooseTMPrize::
 
 MauvilleCity_GameCorner_EventScript_TM32::
 	setvar VAR_TEMP_1, 1
-	bufferitemname STR_VAR_1, ITEM_TM32
-	setvar VAR_0x8004, ITEM_TM32
+	bufferitemname STR_VAR_1, ITEM_TM78
+	setvar VAR_0x8004, ITEM_TM78
 	goto MauvilleCity_GameCorner_EventScript_ConfirmTMPrize
 
 MauvilleCity_GameCorner_EventScript_TM29::
@@ -265,8 +265,8 @@ MauvilleCity_GameCorner_EventScript_TM35::
 
 MauvilleCity_GameCorner_EventScript_TM24::
 	setvar VAR_TEMP_1, 4
-	bufferitemname STR_VAR_1, ITEM_TM24
-	setvar VAR_0x8004, ITEM_TM24
+	bufferitemname STR_VAR_1, ITEM_TM76
+	setvar VAR_0x8004, ITEM_TM76
 	goto MauvilleCity_GameCorner_EventScript_ConfirmTMPrize
 
 MauvilleCity_GameCorner_EventScript_TM13::
@@ -290,10 +290,10 @@ MauvilleCity_GameCorner_EventScript_ConfirmTMPrize::
 MauvilleCity_GameCorner_EventScript_BuyTM32::
 	checkcoins VAR_TEMP_2
 	goto_if_lt VAR_TEMP_2, TM32_COINS, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForTM
-	checkitemspace ITEM_TM32
+	checkitemspace ITEM_TM78
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForTM
 	removecoins TM32_COINS
-	additem ITEM_TM32
+	additem ITEM_TM78
 	updatecoinsbox 1, 1
 	playse SE_SHOP
 	msgbox MauvilleCity_GameCorner_Text_HereYouGo, MSGBOX_DEFAULT
@@ -329,10 +329,10 @@ MauvilleCity_GameCorner_EventScript_BuyTM35::
 MauvilleCity_GameCorner_EventScript_BuyTM24::
 	checkcoins VAR_TEMP_2
 	goto_if_lt VAR_TEMP_2, TM24_COINS, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForTM
-	checkitemspace ITEM_TM24
+	checkitemspace ITEM_TM76
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForTM
 	removecoins TM24_COINS
-	additem ITEM_TM24
+	additem ITEM_TM76
 	updatecoinsbox 1, 1
 	playse SE_SHOP
 	msgbox MauvilleCity_GameCorner_Text_HereYouGo, MSGBOX_DEFAULT

@@ -665,3 +665,41 @@ MauvilleCity_Text_ExplainTV:
 
 MauvilleCity_Text_BeenCheckingOutTV:
 	.string "Hi, have you been checking out TVs?$"
+
+MauvilleCity_EventScript_GameBreaker::
+	lock
+	faceplayer
+	message MauvilleCity_Text_GameBreaker
+	waitmessage
+	pokemart MauvilleCity_Mart_GameBreaker
+	msgbox MauvilleCity_Text_GameBreakerEnd, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+MauvilleCity_Mart_GameBreaker:
+	.2byte ITEM_LOADED_DICE
+	.2byte ITEM_TM13_ICE_BEAM
+	.2byte ITEM_TM29_PSYCHIC
+	.2byte ITEM_TM35_FLAMETHROWER
+	.2byte ITEM_TM76_ELECTRO_BALL
+	.2byte ITEM_TM78_SUBSTITUTE
+	release
+	end
+
+MauvilleCity_Text_GameBreaker:
+	.string "A word of warning young TRAINER:\n"
+	.string "This city is home to a place\l"
+	.string "called the GAME CORNER.\p"
+	.string "You can get some useful items\n"
+	.string "there, but the COINS system they\l"
+	.string "use is a total scam.\p"
+	.string "Fortunately for you, I've been\n"
+	.string "Able to aquire some of the items\l"
+	.string "the offer as prizes there, and\l"
+	.string "will sell you them for their\l"
+	.string "fair market value.$"
+
+MauvilleCity_Text_GameBreakerEnd:
+	.string "Stay away from that GAME\n"
+	.string "CORNER!$"

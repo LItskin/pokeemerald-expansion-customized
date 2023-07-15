@@ -286,10 +286,6 @@ AbandonedShip_Rooms2_B1F_EventScript_ItemDiveBall::
 	finditem ITEM_DIVE_BALL
 	end
 
-AbandonedShip_Room_B1F_EventScript_ItemTM13::
-	finditem ITEM_TM13
-	end
-
 AbandonedShip_Rooms2_1F_EventScript_ItemRevive::
 	finditem ITEM_REVIVE
 	end
@@ -416,10 +412,6 @@ VictoryRoad_1F_EventScript_ItemMaxElixir::
 
 VictoryRoad_1F_EventScript_ItemPPUp::
 	finditem ITEM_PP_UP
-	end
-
-VictoryRoad_B1F_EventScript_ItemTM29::
-	finditem ITEM_TM29
 	end
 
 VictoryRoad_B1F_EventScript_ItemFullRestore::
