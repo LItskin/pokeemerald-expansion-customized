@@ -154,3 +154,35 @@ FortreeCity_Text_GymSign:
 	.string "“The bird user taking flight into\n"
 	.string "the world.”$"
 
+
+FortreeCity_EventScript_Feather::
+	lock
+	faceplayer
+	message FortreeCity_Text_Feather
+	waitmessage
+	pokemart FortreeCity_Mart_Feather
+	msgbox FortreeCity_Text_FeatherEnd, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+FortreeCity_Mart_Feather:
+	.2byte ITEM_PRETTY_FEATHER
+	.2byte ITEM_HEALTH_FEATHER
+	.2byte ITEM_MUSCLE_FEATHER
+	.2byte ITEM_RESIST_FEATHER
+	.2byte ITEM_GENIUS_FEATHER
+	.2byte ITEM_CLEVER_FEATHER
+	.2byte ITEM_SWIFT_FEATHER
+	release
+	end
+
+FortreeCity_Text_Feather:
+	.string "Hey there! People call me FEATHER\n"
+	.string "because I keep finding feathers\l"
+	.string "all over the place/p"
+	.string "I'd be happy to sell some to you.$"
+
+FortreeCity_Text_FeatherEnd:
+	.string "Come buy some later! I always\n"
+	.string "Have too many feathers.$"
