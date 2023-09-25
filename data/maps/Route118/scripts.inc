@@ -309,7 +309,7 @@ Route118_Text_GiveMegaRing:
 	.string "well.\p"
 	.string "Wear this MEGA RING and when you give\n"
 	.string "certain POKéMON a special item called\l"
-	.string "a MEGA STONE, you can perform a\n"
+	.string "a MEGA STONE, you can perform a\l"
 	.string "special evolution in battle called\l"
 	.string "MEGA EVOLUTION.\p"
 	.string "You can also have a spare MEGA STONE\n"
