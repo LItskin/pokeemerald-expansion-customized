@@ -3525,7 +3525,7 @@ static const struct TrainerMonItemCustomMoves sParty_Winona1[] = {
     .lvl = 29,
     .species = SPECIES_CRAMORANT,
     .heldItem = ITEM_WACAN_BERRY,
-    .moves = {MOVE_DIVE, MOVE_AERIAL_ACE, MOVE_PLUCK, MOVE_BELTCH}
+    .moves = {MOVE_DIVE, MOVE_AERIAL_ACE, MOVE_PLUCK, MOVE_BELCH}
     },
     {
     .iv = 210,
