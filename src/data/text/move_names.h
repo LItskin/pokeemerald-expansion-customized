@@ -1667,6 +1667,12 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_PSYBLADE] = _("Psyblade"),
     [MOVE_HYDRO_STEAM] = _("Hydro Steam"),
     [MOVE_BITING_FROST] = _("Biting Frost"),
+    [MOVE_THUNDERSNOW] = _("Thundersnow"),
+    [MOVE_MUDDIER_WATER] = _("MuddierWater"),
+    [MOVE_MOONFALL] = _("Moonfall"),
+    [MOVE_GEHENNA] = _("Gehenna"),
+    [MOVE_MIND_NEEDLE] = _("Mind Needle"),
+
 };
 #endif
 

@@ -3264,6 +3264,26 @@ static const u8 sBitingFrostDescription[] = _(
     "Inflicts frostbite on the\n"
     "foe with piercing cold.");
 
+static const u8 sThundersnowDescription[] = _(
+    "This attack does Electric\n"
+    "and Ice-type damage.");
+
+static const u8 sMuddierWaterDescription[] = _(
+    "This attack does Water\n"
+    "and Ground-type damage.");
+
+static const u8 sMoonfallDescription[] = _(
+    "This attack does Fairy\n"
+    "and Rock-type damage.");
+
+static const u8 sGehennaDescription[] = _(
+    "This attack does Fire\n"
+    "and Poison-type damage.");
+
+static const u8 sMindNeedleDescription[] = _(
+    "Fast and never misses, Bug\n"
+    "and Psychic-type damage.");
+
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
     "effect is in development.");
@@ -4105,4 +4125,9 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_HYDRO_STEAM - 1] = sHydroSteamDescription,
     //Custom Moves
     [MOVE_BITING_FROST - 1] = sBitingFrostDescription,
+    [MOVE_THUNDERSNOW - 1] = sThundersnowDescription,
+    [MOVE_MUDDIER_WATER - 1] = sMuddierWaterDescription,
+    [MOVE_MOONFALL - 1] = sMoonfallDescription,
+    [MOVE_GEHENNA - 1] = sGehennaDescription,
+    [MOVE_MIND_NEEDLE - 1] = sMindNeedleDescription,
 };
